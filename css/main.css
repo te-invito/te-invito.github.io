@@ -271,7 +271,7 @@ body {
 
   font-family: "Montserrat", sans-serif;
   /* background-image: url(/img/pexels-pixabay-220072.jpg); */
-  background-color: #b148bb;
+  background-color: #D29BFD;
   background-position: center;
   /* padding-top: 70px;  comentado 11 de marzo*/
 }
@@ -280,28 +280,31 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
 }
 .titulo1 {
   display: flex;
   margin: 10px;
   display: flex;
   justify-content: center;
-  font-family: 'Pacifico', cursive;
+  /* font-family: 'Pacifico', cursive; */
   font-size: 1.5em;
   align-items: center;
 }
 .titulo1, h1{
+  font-family: 'Lilita One', cursive;
   font-size: 2.7em;
   margin-top: 0;
   margin-bottom: 5px;
 }
 .titulo2 {
 
-  font-family: 'Pacifico', cursive;
+  font-family: 'Playball', cursive;
+
 }
 
 .titulo2 h2{
-  font-size: 3em;
+  font-size: 6em;
   color:white;
 }
 
@@ -330,7 +333,7 @@ a {
 }
 
 .simply-section{
-  background: #fad2eb;
+  background: #ffffff;
   /* width: 70px;
   height: 70px; */
   margin: 0 10px;
@@ -390,11 +393,14 @@ padding-top: 30px;
 .dressCode img{
   /* border: 1px solid rgb(255, 255, 255); */
 
+
  border-radius: 10px;
 
 
 }
-
+.titulos{
+  margin-top: 200px;
+}
 
 /*modal*/
 
@@ -536,6 +542,12 @@ padding-top: 30px;
   justify-content: center;
   margin-bottom: 20px;
   
+}
+.imagen_dress img{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  height: 200px;
 }
 
 

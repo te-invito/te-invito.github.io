@@ -193,6 +193,7 @@ section img{
   background-image: url("/img/portada.jpg");
   /* background-position: center center; */
   background-repeat: no-repeat;
+  background-position: 50% 50%; 
   /* background-attachment: fixed; */
   background-size: cover; 
 }

@@ -329,7 +329,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 100px; 
+  margin-bottom: 300px; 
 }
 
 .simply-section{
@@ -565,11 +565,15 @@ padding-top: 30px;
 {
   .titulo1,h1{
     font-size: 1.5em; /*Era 1.5em;*/
-  }  
+  } 
+  .titulo2 h2{
+    font-size: 4em;
+  } 
 
 }
 @media (min-width: 565px)
 {
+  
 .asistencia, h1{
     font-size: 1.3em;
   

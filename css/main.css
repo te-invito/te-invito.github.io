@@ -594,7 +594,24 @@ padding-top: 30px;
     background-size: cover;
     margin-top: 70px;
 }
+}
 
-
-
+@media (max-width: 500px)
+{
+  .inicio {
+  width: 100%;
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(/img/portada.jpg); */
+   background-image:url(/img/portadaCopia.jpg);
+    /* background-position: center center; */
+    background-repeat: no-repeat;
+    background-position: 50% 50%; /*Era 50% 70%;*/
+    /* background-attachment: fixed; */
+    background-size: cover;
+    margin-top: 70px;
+}
 }

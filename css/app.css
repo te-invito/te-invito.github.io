@@ -181,7 +181,8 @@ section img{
 }
 .inicio{
   width: 100%; 
-  height: 1100px; /*Agregado*/ 
+height: 800px; 
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

@@ -411,7 +411,7 @@ padding-top: 30px;
   align-items: center;
   justify-content: center;
   /* End center */
-  background: rgb(252, 101, 206);
+  /* background: rgb(252, 101, 206); */
   /* background: -webkit-linear-gradient(to right, #834d9b, #d04ed6);
   background: linear-gradient(to right, #834d9b, #d04ed6); */
   /* border: 1px solid #000; */
@@ -439,6 +439,7 @@ padding-top: 30px;
   font-size: 2em;
   padding-right: 3px;
 }
+
 .modal {
   visibility: hidden;
   opacity: 0;
@@ -483,6 +484,13 @@ padding-top: 30px;
   font-size: 1.5em;
 }
 
+
+.wrapper h3{
+  background-color: #ff4d6d;
+  margin-top: 10px;
+  border-radius: 18px;
+  box-shadow: 3px 4px #333;
+}
 
 .modal__close {
   font-size: 2em;

@@ -1,5 +1,5 @@
 :root {
-  --theme-color: rgb(252, 190, 224);
+  --theme-color: #ff4d6d;
   --primary-color: #124f88;
   --secundary-color: #f7c331;
   --text-color-inverse: white;
@@ -49,7 +49,7 @@ textarea::placeholder{
 }
 
 .contact-form p{
-  background-color:#f5ade7;
+  background-color:#ff4d6d; 
   text-align: justify;
   /* font-size: 16px; */
   margin-bottom: 35px;
@@ -231,7 +231,7 @@ input[type=radio]:checked ~ label{
 }
 
 input[type=button], input[type=submit], input[type=reset] {
-  background-color: rgb(252, 101, 206);
+  background-color: #ff4d6d;
   border: none;
   color: white;
   padding: 16px 20px;
@@ -271,7 +271,7 @@ body {
 
   font-family: 'Lilita One', cursive;
   /* background-image: url(/img/pexels-pixabay-220072.jpg); */
-  background-color: #D29BFD;
+  background-color: #000000;
   background-position: center;
   /* padding-top: 70px;  comentado 11 de marzo*/
 }
@@ -282,6 +282,7 @@ body {
   flex-direction: column;
 
 }
+
 .titulo1 {
   display: flex;
   margin: 10px;
@@ -294,8 +295,9 @@ body {
 .titulo1, h1{
   font-family: 'Lilita One', cursive;
   font-size: 2.7em;
-  margin-top: 25px;
+  /* margin-top: 25px; */
   margin-bottom: 5px;
+  color: #ff4d6d;
 }
 .titulo2 {
 
@@ -320,6 +322,18 @@ a {
 .vertical-padding {
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.solapa{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff4d6d;
+  border-radius: 20px;
+}
+.solapa, iframe{
+
+  margin: 20px;
 }
 
 /*cuenta regresiva*/
@@ -359,6 +373,8 @@ a {
   justify-content: center;
   align-items: center;
   text-align: justify;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .ComoLlegar{
@@ -367,6 +383,13 @@ a {
   align-items: center;
  width: 100%;
  flex-direction: column;
+}
+.cuandoydonde{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .cuandoydonde p{
@@ -524,7 +547,7 @@ padding-top: 30px;
   -ms-transform-origin:0 0;
   -o-transform-origin:0 0;
   transform-origin:0 0;
-  background-color:#f69c9b;
+  background-color:#ff4d6d;
   background-image:"/img/pause-play.png";
   letter-spacing:2px;
   font-family:"montserrat";
@@ -551,6 +574,15 @@ padding-top: 30px;
   margin-bottom: 20px;
   
 }
+.imagen_dress{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  
+}
+
 .imagen_dress img{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -573,6 +605,7 @@ padding-top: 30px;
 {
   .titulo1,h1{
     font-size: 1.5em; /*Era 1.5em;*/
+    color: #ff4d6d;
   } 
   .titulo2 h2{
     font-size: 4em;

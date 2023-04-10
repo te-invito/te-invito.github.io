@@ -325,10 +325,13 @@ a {
 }
 
 .flecha-continuar{
-
-  width: 50px;
-  position: absolute;
-  bottom: -15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: 50px; */
+  flex-direction: column;
+  /* position: absolute;
+  bottom: -15%; */
 }
 
 .solapa{

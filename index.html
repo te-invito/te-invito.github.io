@@ -26,7 +26,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans&family=Pacifico&family=Playball&family=Satisfy&display=swap" rel="stylesheet">  
 
-
+  <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="/css/animate.css" type="text/css">
 
@@ -60,30 +60,60 @@
 <script src="/js/lottie_svg.min.js"></script>
 
 </head>
+<!--prueba-->
+    <!-- Loader -->
+    <!-- START PRELOADER AREA-->
+    <div class="preloader-area" style="display: none;">
+
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="loader" style="display: none;">
+          <lottie-player class="lottie" src="/archivos esp/loader.json" background="transparent" speed="1" style="width: 120px; height: 120px;" loop autoplay></lottie-player>
+        
+        </div>
+      </div>
+    
+    </div>
+    <!-- END PRELOADER AREA -->
+        
+          <!-- Modal musica fondo -->
+          <div id="modalMusica" class="modal fade" tabindex="-1" style="display: none;" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+    
+          <div class="modal-body text-center">
+            <p>
+    
+              Bienvenidos a la invitación de
+              Florencia
+            </p>
+    
+            <span>La música de fondo es parte de la experiencia</span>
+    
+            <br>
+            <a class="boton" id="play-music-modal" href="#">Ingresar con música</a>
+            <a class="boton" data-dismiss="modal" aria-label="Close" id="" href="#">Ingresar sin música</a>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+
+<!--Fin Prueba-->
+
+<!-- Animacion loader -->
+<script>
+  let svgContainerLoader = document.querySelector('.loader');
+
+  let animLoader = bodymovin.loadAnimation({
+    wrapper: svgContainerLoader,
+    animType: 'svg',
+    loop: true,
+    path: _pathProducto + "img/loader.json"
+  });
+</script>
 
 <body>
-
-  <!-- <header class="header">
-      
-      <div class="logo">
-        <img src="img/logo.jpg" alt="">
-      </div>
-
-      <button class="button">
-        <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg>
-      </button>
-
-      <nav class="nav">
-          <ul class="ul">
-              <li class="li"><a href="#inicio" class="a">Inicio</a></li>
-              <li class="li"><a href="#sobre_mi" class="a">Sobre mi</a></li>
-              <li class="li"><a href="#" class="a">Servicios</a></li>
-              <li class="li"><a href="#" class="a">Contacto</a></li>
-          </ul>
-      </nav>
-  </header> -->
   <header class="topheader">
     <nav class="topnav">
       <a href="#" class="logo">
@@ -121,10 +151,18 @@
       </div>
       
 
-      <div id="cuenta" class="cuenta"></div>
+      <div id="cuenta" class="cuenta">
+        <div class="flecha-continuar">
+          <lottie-player class="lottie" src="/archivos esp/down-scroll.json" background="transparent" speed="1" style="width: 70px; height: 70px;" loop autoplay></lottie-player>
+
+        </div>
+        
+
+      </div>
 
 
       <!-- <img src="img/pieverano.png" alt=""> -->
+      
     </section>
 
     <section class="invitacion">
@@ -134,6 +172,7 @@
       <lottie-player class="lottie" src="/img/copas.json" background="transparent" speed="1" style="width: 120px; height: 120px;" loop autoplay></lottie-player>
       
     </section>
+
     <section id="Cuandoydonde" class="cuandoydonde">
       <span class="titulo1">
         <h1>Cu&aacute;ndo y d&oacute;nde ?</h1>
@@ -212,7 +251,7 @@
       <p class="subtitle">Junto a personas que son muy importantes en mi vida</p>
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
         
-      <lottie-player class="lottie" src="/img/f4XYHuDGsJ.json" background="transparent" speed="1" style="width: 120px; height: 120px;" loop autoplay></lottie-player>
+      <lottie-player class="lottie" src="/img/f4XYHuDGsJ.json" background="transparent" speed="1" style="width: 90px; height: 90px;" loop autoplay></lottie-player>
       </div>
       
       
@@ -261,11 +300,11 @@
 
     <!--fin galeria-->
 
-
+    
     <!--Audio-->
     <div>
       <audio id="audio" loop="">
-        <source src="archivos esp/Harry Styles  As It Was Official Video.mp3"
+        <source src="archivos esp/harry-styles-as-it-was.mp3"
           type="audio/mp3">
       </audio>
 
@@ -317,8 +356,7 @@
 
 
 
-          <textarea name="info_adicional" id="" cols="40" rows="10"
-            placeholder="Podes comentarnos si tenes alguna restriccion alimentaria!" class="estilotextarea4">
+          <textarea name="info_adicional" id="" cols="40" rows="10" placeholder="Podes comentarnos si tenes alguna restriccion alimentaria!" class="estilotextarea4">
           </textarea>
           <div class="envio">
             <input type="submit"  value="Enviar confirmaci&oacute;n"></input>
@@ -381,41 +419,6 @@
 <script>
 
  const d = document;
- /* function contactForm() {
-    const $form = d.querySelector(".contact-form"),
-      $inputs = d.querySelectorAll(".contact-form[required]");
-
-    d.addEventListener("submit", (e) => {
-      e.preventDefault();
-      alert("Enviando formulario");
-      const $loader = d.querySelector(".contact-form-loader"),
-        $response = d.querySelector(".contact-form-response");
-
-      fetch("https://formsubmit.co/ajax/nadia.vero8787@gmail.com", {
-        method: "POST",
-        body: new FormData(e.target)
-      })
-        .then(res=>res.ok ? res.json():Promise.reject(res))
-        .then(json=>{
-          console.log(json);
-          $loader.classList.add("none");
-          $response.classList.remove("none");
-          $response.innerHTML = '<p></p>';
-          $form.reset();
-        })
-        .catch(err=> {
-          console.log(err);
-          let message = err.statusText||"Ocurrio un error al enviar, intenta nuevamente";
-          $response.innerHTML = 'Error${err.statusText}:${message}';
-        })
-        .finally(()=>setTimeout(()=>{
-          $response.classList.add("none");
-          $response.innerHTML = "";
-        }, 3000));
-
-
-    });
-  }*/
 
   function contactForm() { 
    const $form = d.querySelector(".contact-form"),
@@ -469,7 +472,7 @@
     <!-- <a href="https://walink.co/72d778" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a> -->
   </main>
   <footer class="pie">
-    <h6>Diseñado con</h6> &nbsp;<i class="fa-solid fa-heart"></i>
+    <h6>Diseñado con</h6> &nbsp;<i class="fa-solid fa-heart fa-beat fa-xs" style="color: #d60004;"></i>
     &nbsp; <h6>por</h6> &nbsp;
     <a href="https://www.facebook.com/digitalproject10">Digital Project</a>
   </footer>
@@ -479,11 +482,46 @@
     defer></script>
   <script src="js/simplyCountdown.min.js"></script>
   <script src="js/countdown.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous">
+  
+  </script>
   <script src="js/galeria.js"></script>
 
   <script defer src="js/app.js"></script>
+
+  <!-- Modal musica inicio -->
+  
+  <script>
+    // Al cargar abro modal
+    prealoaderOption.on("load", function() {
+      $('#modalMusica').modal({
+        backdrop: 'static'
+      });
+    });
+
+    // Btn play music modal
+    $('body').on('click', '#play-music-modal', function(e) {
+
+      e.preventDefault();
+
+      $('#play-pause-music').attr('data-estado-music', 'play');
+      animMusicAnimIcon.play();
+      player.playVideo();
+
+      $('#modalMusica').modal('hide');
+
+    });
+  </script>
+
+<!-- musica
+  
+  <div id="controlador-musica">
+    <div id="play-pause-music" data-estado-music="play" class="music-anim-icon">
+      <lottie-player class="lottie" src="/archivos esp/json_musica.json" background="transparent" speed="1" style="width: 50px; height: 50px;" loop autoplay></lottie-player>
+  </div>
+
+  <iframe id="player-musica-fondo" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Taylor Swift – mirrorball (Official Lyric Video)" width="10" height="10" src="./Florencia ___ Mis 15 años ____files/saved_resource.html"></iframe>
+ -->
 
 
 

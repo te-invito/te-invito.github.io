@@ -1,4 +1,5 @@
 .swiffy-slider{position:relative;
+    margin-top:50px;
     display:block;
     width:100%;
     --swiffy-slider-snap-align:center;

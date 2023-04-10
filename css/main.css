@@ -324,6 +324,13 @@ a {
   padding-bottom: 25px;
 }
 
+.flecha-continuar{
+
+  width: 50px;
+  position: absolute;
+  bottom: -15%;
+}
+
 .solapa{
   display: flex;
   justify-content: center;
@@ -341,6 +348,7 @@ a {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
   justify-content: center;
   align-items: center;
   margin-bottom: 600px; 
@@ -540,7 +548,7 @@ padding-top: 30px;
 
   float:left;
   right:0;
-  top:45%;
+  top:30%;
   position:fixed;
   -webkit-transform-origin:0 0;
   -moz-transform-origin:0 0;
@@ -563,10 +571,9 @@ padding-top: 30px;
   
 }
 .playPauseBTN i{
-  margin-top: 10px;
-  margin-left: 18px;
+  margin-top: 13px;
+  margin-left: 7px;
 }
-
 
 .fotofinal{
   display: flex;
@@ -587,8 +594,48 @@ padding-top: 30px;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
-  height: 200px;
+  height: 150px;
 }
+/*prueba*/
+
+
+/* Loader */
+
+
+.preloader-area {
+  position: fixed;
+  background:#000000;  /*var(--color-3);*/
+  z-index: 11000;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.preloader-area .loader{
+  width: 155px;
+}
+
+/* Musica de fondo */
+
+#player-musica-fondo{
+  position: absolute;
+  left:-99999px;
+}
+
+#controlador-musica{
+  top: initial;
+  bottom:0;
+  right: 0;
+}
+
+.music-anim-icon{
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+
+
 
 
 @media (min-width: 950px) {

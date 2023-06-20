@@ -27,8 +27,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans&family=Pacifico&family=Playball&family=Satisfy&display=swap" rel="stylesheet">  
 
   <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="/css/animate.css" type="text/css">
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/animate.css" type="text/css">
 
   <link rel="icon" href="img/logo.ico">
 
@@ -57,7 +57,7 @@
 <meta property="og:image" content="https://te-invito.github.io/img/vistap.jpg"> 
 <meta property="og:image:width" content="561">
 <meta property="og:image:height" content="935">
-<script src="/js/lottie_svg.min.js"></script>
+<script src="js/lottie_svg.min.js"></script>
 
 </head>
 <!--prueba-->
@@ -67,7 +67,7 @@
 
       <div class="d-flex justify-content-center align-items-center h-100">
         <div class="loader" style="display: none;">
-          <lottie-player class="lottie" src="/archivos esp/loader.json" background="transparent" speed="1" style="width: 120px; height: 120px;" loop autoplay></lottie-player>
+          <lottie-player class="lottie" src="archivos esp/loader.json" background="transparent" speed="1" style="width: 120px; height: 120px;" loop autoplay></lottie-player>
         
         </div>
       </div>
@@ -154,13 +154,13 @@
       <div id="cuenta" class="cuenta">
       
 
-      <!-- <img src="img/pieverano.png" alt=""> -->
+
       
     </section>
   </div> &nbsp;
   <div class="flecha-continuar">
     
-    <lottie-player class="lottie" src="/archivos esp/down-scroll.json" background="transparent" speed="1" style="width: 70px; height: 70px;" loop autoplay></lottie-player>
+    <lottie-player class="lottie" src="archivos esp/down-scroll.json" background="transparent" speed="1" style="width: 70px; height: 70px;" loop autoplay></lottie-player>
 
   </div>
   
@@ -171,7 +171,7 @@
     <div class="solapa">
       <p> Te invito a festejar mis quince años, espero que puedas venir a compartir conmigo esta noche soñada!</p>
     </div>
-      <lottie-player class="lottie" src="/img/copas.json" background="transparent" speed="1" style="width: 120px; height: 120px;" loop autoplay></lottie-player>
+      <lottie-player class="lottie" src="img/copas.json" background="transparent" speed="1" style="width: 120px; height: 120px;" loop autoplay></lottie-player>
       
     </section>
 
@@ -235,7 +235,7 @@
         <h1>Dress code</h1>
       </span>
       <div class="imagen_dress">
-        <lottie-player class="lottie" src="/img/json_dresscode.json" background="transparent" speed="1" style="width: 120px; height: 120px;" loop autoplay></lottie-player>
+        <lottie-player class="lottie" src="img/json_dresscode.json" background="transparent" speed="1" style="width: 120px; height: 120px;" loop autoplay></lottie-player>
         <h3>Elegante</h3>
         <div class="solapa">
           <img src="/img/dress3-1-1.png" alt=""> 
@@ -253,7 +253,7 @@
       <p class="subtitle">Junto a personas que son muy importantes en mi vida</p>
       <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> 
         
-      <lottie-player class="lottie" src="/img/f4XYHuDGsJ.json" background="transparent" speed="1" style="width: 90px; height: 90px;" loop autoplay></lottie-player>
+      <lottie-player class="lottie" src="img/f4XYHuDGsJ.json" background="transparent" speed="1" style="width: 90px; height: 90px;" loop autoplay></lottie-player>
       </div>
       
       
@@ -312,7 +312,7 @@
 
       <!-- <button class="playPauseBTN" id="playPauseBTN" onclick="playPause()"></button> -->
       <div class="playPauseBTN" id="playPauseBTN" onclick="playPause()" alt="">
-        <i class="fa-solid fa-volume-high parlante"></i>
+        <i class="fa-solid fa-music fa-beat" style="color: #ffffff;"></i>
       </div>
       <span class="material-icons-outlined">
       </span>
@@ -394,22 +394,24 @@
         var audio = document.getElementById('audio');
         var playPauseBTN = document.getElementById('playPauseBTN');
         var count = 0;
-
+    
         function playPause() {
+          const h2 = document.getElementById("playPauseBTN");
+          
           if (count == 0) {
             count = 1;
             audio.play();
-            playPauseBTN.innerHTML = "<b>PAUSA</b>";
+            let html = "<i class='fa-solid fa-pause' style='color: #ffffff;'/>";
+            // h2.insertAdjacentHTML("", html);
+            playPauseBTN.innerHTML = "<i class='fa-solid fa-pause' style='color: #ffffff;''></i>";
+            // playPauseBTN.innerHTML = "<b>PAUSA</b>";
           } else {
             count = 0;
             audio.pause();
-            playPauseBTN.innerHTML = "<b>PLAY ►</b>";
-          }
-
-        }
-
-        
-
+             let html = "<i class='fa-solid fa-play' style='color: #ffffff;''></i>";
+            // h2.insertAdjacentHTML("afterbegin", html);
+             playPauseBTN.innerHTML = "<i class='fa-solid fa-play' style='color: #ffffff;''></i>";
+          } }
         function stop() {
           playPause()
           audio.pause();

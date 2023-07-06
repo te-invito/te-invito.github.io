@@ -89,7 +89,7 @@ main{
   position:absolute;
   top: 0;
   width:100%;
-  background-color: #282828;
+  background-color: #C08081;
   padding: 1em;
 
   display: flex;
@@ -124,7 +124,7 @@ main{
   margin: 0px;
   font-size: 1.8em;
   text-align: center;
-  color: #ff4d6d;
+  color: white;
 text-shadow: rgb(46, 46, 46) 2px 3px;
 
 }
@@ -161,24 +161,34 @@ text-shadow: rgb(46, 46, 46) 2px 3px;
 }
 section{
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content:center;
   /* padding: 15px; */
   align-items: center;
+  flex-wrap: nowrap;
+
 
 }
 section .galeria {
 
 display: flex;
-flex-wrap: wrap;
+flex-wrap: nowrap;
+align-items: center;
+flex-direction: column;
 
 }
+section .frase {
+  display: flex;
+
+  flex-direction: column;
+}
+
 .marco{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-width: 100%;
-  background-color: #000;
+  width: 100%;
+  background-color: var(--background-color);
 }
 .marco h2{
   color: #ff4d6d;
@@ -190,7 +200,7 @@ width: 100%;
 
 section img{
   width: 100%;
-  height: 250px;
+  /* height: 250px; */
   object-fit: cover;
   object-position: bottom;
 }
@@ -205,7 +215,7 @@ height: 750px;
   /* background-position: center;
   background-repeat:repeat-x; */
   /* background-image: url("/img/portada.jpg"); */
-  background-image: url(/img/portadaCopia.jpg);
+  background-image: url("/img/portadaCopia.jpg");
   /* background-position: center center; */
   background-repeat: no-repeat;
   background-position: 50% 30%; 
@@ -333,6 +343,7 @@ text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
   color:rgb(255, 255, 255);
+  text-decoration: none;
 }
 .pie i{
   font-size: 1.2em;

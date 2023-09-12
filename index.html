@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tu invitaci&oacute;n</title>
+  <title>Mis quince</title>
   <link rel="stylesheet" href="css/app.css"> 
    <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/navbar.css"> 
@@ -63,49 +63,15 @@
 <!-- <script src="/js/bootstrap.bundle.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></head>
+
 <link rel="stylesheet" href="js/bootstrap2.min.css">
-<!--prueba-->
-    <!-- Loader -->
-    <!-- START PRELOADER AREA-->
-    <div class="preloader-area" style="display: none;">
+<link rel="stylesheet" href="/css/animationsOnScroll.css">
+<link rel="stylesheet" href="/css/animate.css">
 
-      <div class="d-flex justify-content-center align-items-center h-100">
-        <div class="loader" style="display: none;">
-          <lottie-player class="lottie" src="/archivos esp/loader.json" background="transparent" speed="1" style="width: 120px; height: 120px;" loop autoplay></lottie-player>
-        
-        </div>
-      </div>
-    
-    </div>
-    <!-- END PRELOADER AREA -->
-        
-          <!-- Modal musica fondo -->
-          <!-- <div id="modalMusica" class="modal fade" tabindex="-1" style="display: none;" aria-hidden="true">
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-    
-          <div class="modal-body text-center">
-            <p>
-    
-              Bienvenidos a la invitación de
-              Kiara
-            </p>
-    
-            <span>La música de fondo es parte de la experiencia</span>
-    
-            <br>
-            <a class="boton" id="play-music-modal" href="#">Ingresar con música</a>
-            <a class="boton" data-dismiss="modal" aria-label="Close" id="" href="#">Ingresar sin música</a>
-          </div>
-    
-        </div>
-      </div>
-    </div>
- -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
-<!--Fin Prueba-->
+<script src="/js/script_carousel.js"></script>
 
-<!-- Animacion loader -->
 <script>
   let svgContainerLoader = document.querySelector('.loader');
 
@@ -124,12 +90,11 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script> -->
 
-  <header class="topheader">
+  <!-- <header class="topheader">
     <nav class="topnav">
       <a href="#" class="logo">
-        <!-- <img height="50" width="50" src="img/logo.jpg" alt="" /> -->
         <div class="logotype">
-          <!-- Tu invitacion -->
+
         </div>
       </a>
       <button class="open-menu" aria-label="Abrir menú">
@@ -147,20 +112,21 @@
 
       </ul>
     </nav>
-  </header>
+  </header> -->
 
   <main>
     <section class="inicio" id='inicio'>
+      
+
       <div class="titulos">
         <span class="titulo1">
           <h1>Mis Quince Años</h1>
         </span>
 
         <!-- &nbsp; &nbsp;&nbsp;   -->
-        <span class="titulo2"><h2 >Anahí</h2></span>
-        <span>
-          <h1>¿ Cuánto falta ?</h1>
-        </span>
+        <span class="titulo2 animate animatable element"><h2 class="nombre">Anahí</h2></span>
+        
+        <span> <h1 class="cuantofalta">¿ Cuánto falta ?</h1></span>
       </div>
 
       <div id="cuenta" class="cuenta">
@@ -180,7 +146,7 @@
 
 
     <section class="invitacion">
-        <div class="solapa">
+        <div class="solapa animate animatable fadeInRight">
         <p> Te invito a festejar mis quince años, espero que puedas venir a compartir conmigo esta noche soñada!</p>
         </div>
         <lottie-player class="lottie" src="/img/copas.json" background="transparent" speed="1" style="width: 120px; height: 120px;" loop autoplay></lottie-player>
@@ -191,7 +157,7 @@
         <span class="titulo1">
             <h1>Cu&aacute;ndo y d&oacute;nde ?</h1>
         </span>
-        <div class="solapa">
+        <div class="solapa animate animatable fadeInLeft">
           <p>El Sábado 16 de Diciembre <br>
             Desde las 21:00 hasta las 05:00 am <br> 
            En el salón "Estudio DL" <br>
@@ -286,7 +252,7 @@
                 <h1>Un recorrido de estos 15 años</h1>
             </span>
     
-            <div class="solapa">
+            <div class="solapa animate animatable fadeInRight">
                 <p>Junto a personas que son muy importantes en mi vida</p>
             </div>
         </div>
@@ -347,7 +313,7 @@
         </button> 
       </div> -->
 
-      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -355,16 +321,16 @@
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" data-bs-interval="2000">
             <img src="/img/f1.jpeg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="2000">
             <img src="/img/f2.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="2000">
             <img src="/img/f3.jpeg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="2000">
             <img src="/img/f4.jpeg" class="d-block w-100" alt="...">
           </div>
         </div>
@@ -382,28 +348,57 @@
 
     </section>
 
+    <section class="insta">
+       <div class="row">
+          <div class="col-sm">
+            <!-- <div class="block animatable bounceInLeft titulohash"> -->
+              <div class="animate animatable fadeInLeft">
+                <h3>DURANTE EL CUMPLEAÑOS UTILIZA EL HASHTAG</h3>
+              </div>
+
+              <div class="animate animatable fadeInRight hash">
+                <h3>#MIS15ANAHI</h3>  
+              </div>
+          </div>
+      </div>
+
+        <div class="contentinsta">
+          <lottie-player class="lottie" src="./archivos esp/instagram.json" background="transparent" speed="1" style="width: 140px; height: 140px;" loop autoplay></lottie-player>  
+
+        <div class="boton">
+              <button type="button" class="btn btn-primary button cllegar">
+              <a href="https://www.instagram.com/explore/tags/MIS15ANAHI/">
+                VER EN INSTAGRAM
+              </a>
+            </button>
+
+
+
+        </div>
+
+
+        </div>
+    </section>
+
+
 
     <!--fin galeria-->
 
     
     <!--Audio-->
 
-    <div>
+    <!-- <div>
       <audio id="audio" loop="">
         <source src="archivos esp/harry-styles-as-it-was.mp3"
           type="audio/mp3">
       </audio>
-
-      <!-- <button class="playPauseBTN" id="playPauseBTN" onclick="playPause()"></button> -->
       <div class="playPauseBTN" id="playPauseBTN" onclick="playPause()" alt="">
         <i class="fa-solid fa-music fa-beat" style="color: #ffffff;"></i>
-        <!-- <i class="fa-solid fa-volume-high parlante"></i> -->
       </div>
       <span class="material-icons-outlined">
       </span>
-      <!-- Play ►/ Pause -->
-      <!-- <button onclick="stop()">Stop ▋</button> -->
-    </div>
+
+    </div> -->
 
 
 
@@ -439,19 +434,20 @@
           </ul>
           <div class="datoimport">
             <h3>Querés enviarnos alg&uacute;n dato importante?</h3>
-          </div>
+          
 
 
 
           <textarea name="info_adicional" id="" cols="30" rows="5" placeholder="Podes comentarnos si tenes alguna restriccion alimentaria!" class="estilotextarea4">
           </textarea>
+        </div>
           <div class="envio">
             <input class="btn btn-primary" type="submit"  value="Enviar confirmaci&oacute;n"></input>
           </div>
           
 
           <div class="contact-form-loader none">
-            <img src="/img/loader.svg" alt="Cargando">
+            <img src="/img/spinning-circles.svg" alt="Cargando">
           </div> 
           <div class="contact-form-response none">
             <p>Enviado. Gracias!!</p>
@@ -514,9 +510,9 @@
     d.addEventListener("submit", (e) => {
       e.preventDefault();
 /*      alert("Enviando formulario");*/
-     const $loader = d.querySelector(".contact-form-loader"),
+      const $loader = d.querySelector(".contact-form-loader"),
         $response = d.querySelector(".contact-form-response");
-      /*  $loader.classList.remove("none");*/
+        $loader.classList.remove("none");
 
       fetch("https://formsubmit.co/ajax/nadia.vero8787@gmail.com", {
         method: "POST",
@@ -539,7 +535,7 @@
           $response.classList.add("none");
           $loader.classList.add("none")
           $response.innerHTML = "";
-        }, 7000)); 
+        }, 10000)); 
 
 
     });
@@ -602,16 +598,34 @@
       <div class="fotofinal">
           <img src="/img/vistaprevia.jpg" alt="">
       </div>
+
+      <div>
+        <audio id="track">
+       <source src="/archivos esp/harry-styles-as-it-was.mp3">
+       </audio>
+    
+       <div id="contenedor-play">
+        <div id="player-container">
+          <div id="play-pause" class="play">Play</div> 
+        </div>
+       </div>
+       
+           
+       
+       </div>
       
 
 
-    <!-- <a href="https://walink.co/72d778" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a> -->
   </main>
     <footer class="pie">
       <h6>Diseñado con</h6> &nbsp;<i class="fa-solid fa-heart fa-beat fa-xs" style="color: #d60004;"></i>
       &nbsp; <h6>por</h6> &nbsp;
       <a href="https://www.facebook.com/digitalproject10"><h6>Digital Project</h6></a>
     </footer>
+
+
+
+    
 
 
   <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
@@ -625,40 +639,32 @@
 
   <script defer src="js/app.js"></script>
 
-  <!-- Modal musica inicio -->
+
+ <script>
+  var track = document.getElementById("track");
   
-  <!-- <script>
-    // Al cargar abro modal
-    prealoaderOption.on("load", function() {
-      $('#modalMusica').modal({
-        backdrop: 'static'
-      });
-    });
-
-    // Btn play music modal
-    $('body').on('click', '#play-music-modal', function(e) {
-
-      e.preventDefault();
-
-      $('#play-pause-music').attr('data-estado-music', 'play');
-      animMusicAnimIcon.play();
-      player.playVideo();
-
-      $('#modalMusica').modal('hide');
-
-    });
-  </script> -->
-
-<!-- musica
+  var controlBtn = document.getElementById("play-pause");
   
-  <div id="controlador-musica">
-    <div id="play-pause-music" data-estado-music="play" class="music-anim-icon">
-      <lottie-player class="lottie" src="/archivos esp/json_musica.json" background="transparent" speed="1" style="width: 50px; height: 50px;" loop autoplay></lottie-player>
-  </div>
+  function playPause() {
+  if (track.paused) {
+      track.play();
+      //controlBtn.textContent = "Pause";
+      controlBtn.className = "pause";
+  } else { 
+      track.pause();
+       //controlBtn.textContent = "Play";
+      controlBtn.className = "play";
+  }
+  }
+  
+  controlBtn.addEventListener("click", playPause);
+  track.addEventListener("ended", function() {
+  controlBtn.className = "play";
+  });
+  
+  </script>
 
-  <iframe id="player-musica-fondo" frameborder="0" allowfullscreen="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" title="Taylor Swift – mirrorball (Official Lyric Video)" width="10" height="10" src="./Florencia ___ Mis 15 años ____files/saved_resource.html"></iframe>
- -->
-
+<script src="/js/animationsOnScroll.js"></script> 
 
 
 

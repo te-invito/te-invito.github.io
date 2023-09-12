@@ -204,40 +204,6 @@ section img{
   object-fit: cover;
   object-position: bottom;
 }
-.inicio{
-  width: 100%; 
-height: 750px; 
-
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  /* background-position: center;
-  background-repeat:repeat-x; */
-  /* background-image: url("/img/portada.jpg"); */
-  background-image: url("/img/portadaCopia.jpg");
-  /* background-position: center center; */
-  background-repeat: no-repeat;
-  background-position: 50% 30%; 
-  /* background-attachment: fixed; */
-  background-size: cover; 
-  margin-top: 70px;
-}
-
-
-/* .inicio img {
-  width: 100%;
-  
-  height: 700px; 
-  
- object-fit: cover;
-  object-position: bottom; 
-}
- */
-
-
-
-
 
 .container, .c1  {
 
@@ -390,7 +356,7 @@ html {
   scroll-behavior: smooth;
 }
  h3, h4, h5, h6, span, a, strong, blockquote, i, b, u, em {
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
   font-weight: inherit;
   font-style: inherit;
   text-decoration: none;

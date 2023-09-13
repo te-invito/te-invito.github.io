@@ -26,6 +26,7 @@
 }
 main{
   background-color: var(--background-color);
+  overflow: hidden;
 }
 .regalo{
   display: flex;

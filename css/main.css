@@ -431,7 +431,7 @@ font-family: satisfy;
 /*fin formulario*/
 
 body {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;

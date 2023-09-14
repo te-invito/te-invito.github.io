@@ -851,7 +851,8 @@ button .btn-primary{
     justify-content: center;
     align-items: center;
     /* background-image: url(/img/portada.jpg); */
-   background-image:url(/img/portadaCopia.jpg);
+   /* background-image:url(/img/portadaCopia.jpg); */
+   background-image: url(/img/portada.avif);
     /* background-position: center center; */
     background-repeat: no-repeat;
     background-position: 50% 32%; /*Era 50% 70%;*/
@@ -874,6 +875,7 @@ button .btn-primary{
     justify-content: center;
     align-items: center;
     /* background-image: url(/img/portada.jpg); */
+   /* background-image:url(/img/portadaCopia.jpg); */
    background-image:url(/img/portadaCopia.jpg);
     /* background-position: center center; */
     background-repeat: no-repeat;

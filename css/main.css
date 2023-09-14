@@ -295,7 +295,7 @@ html {
 }
 
 input[type=text] {
-  width: 70%;
+  /* width: 70%; */
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
@@ -878,7 +878,7 @@ button .btn-primary{
     /* background-position: center center; */
     background-repeat: no-repeat;
     background-position: 50% 50%; /*Era 50% 70%;*/
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-size: cover;
     /* margin-top: 70px; */
 }

@@ -131,18 +131,18 @@
         <span> <h1 class="cuantofalta">¿ Cuánto falta ?</h1></span>
       </div>
 
-      <div id="cuenta" class="cuenta">
-      
+      <div id="cuenta" class="cuenta"></div>
+      <div class="flecha-continuar">
+    
+        <lottie-player class="lottie" src="/archivos esp/down-scroll.json" background="transparent" speed="1" style="width: 70px; height: 70px;" loop autoplay></lottie-player>
+    
+      </div>
+    
 
       <!-- <img src="img/pieverano.png" alt=""> -->
       
     </section>
-  </div> &nbsp;
-  <div class="flecha-continuar">
-    
-    <lottie-player class="lottie" src="/archivos esp/down-scroll.json" background="transparent" speed="1" style="width: 70px; height: 70px;" loop autoplay></lottie-player>
-
-  </div>
+  
   
 
 
@@ -402,14 +402,14 @@
 
 
 
-    <section id="confirmarAsistencia">
-      
+    <section id="confirmarAsistencia" class="confirmarAsistencia">
+      <span class="titulo1" class="asistencia">
+        <h1 >Confirmar Asistencia</h1>
+      </span>
       <form class="contact-form">
         <!--era contact-Form-->
         <div class="container_2">
-          <span class="titulo1" class="asistencia">
-            <h1 >Confirmar Asistencia</h1>
-          </span>
+          
           <!-- <h3 class="asistencia">Confirmar Asistencia</h3> -->
           <input type="text" placeholder="Ingresar Nombre y Apellido" name="nombreyApellido" required>
 
@@ -448,7 +448,7 @@
           <div class="contact-form-loader none">
         
             <img src="/img/spinning-circles.svg" alt="Cargando">
-            <p>Enviando</p>
+            <p class="cargando">Enviando</p>
           </div> 
           <div class="contact-form-response none">
             <p>Enviado. Gracias!!</p>
@@ -551,7 +551,7 @@
             <h1>Regalo</h1>
         </span>
          
-      <lottie-player  src="/img/regalo.json" background="transparent" speed="1" style="width: 160px; height: 160px;" loop autoplay></lottie-player>
+      <lottie-player  src="/archivos esp/gift.json" background="transparent" speed="1" style="width: 160px; height: 160px;" loop autoplay></lottie-player>
 
     </div>
   <section class="regalo">
@@ -596,7 +596,7 @@
 </div>
   </section>
       
-      <div class="fotofinal animate animatable moveUp">
+      <div class="fotofinal animate animatable fadeInLeft">
           <img src="/img/vistaprevia.jpg" alt="">
       </div>
 

@@ -48,9 +48,14 @@ body {
     height: 100vh;
     background-image: url("./img/portada1.jpg");
     background-size:cover;
-    background-position: center center; 
+    /* background-position: center center;  */
     background-attachment: fixed;
     overflow-x: hidden;
+
+    
+    background-position-x: 50%;
+    background-position-y: 0%;
+    background-position: center top;
 
 
   }
@@ -1390,10 +1395,13 @@ button.accordion{
       width: 100%;
       height: 100vh; 
       background-image: url("./img/portada1.jpg");
-      background-size:cover; 
+      /* background-size:cover; 
       background-position: center; 
-      background-attachment:scroll;
-      overflow-x: hidden;
+      background-attachment:scroll;*/
+      overflow-x: hidden; 
+      background-position-x: 50%;
+      background-position-y: 0%;
+      background-position: center top;
   
   
     }
@@ -1448,6 +1456,7 @@ button.accordion{
   .portada{
     background-image: url("./img/portada\ pc.jpeg"); 
         background-position: center center;
+
   }
   
   .adorno {

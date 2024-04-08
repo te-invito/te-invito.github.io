@@ -49,7 +49,7 @@ body {
     background-image: url("./img/portada1.jpg");
     background-size:cover;
     /* background-position: center center;  */
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     overflow-x: hidden;
 
     

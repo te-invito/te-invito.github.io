@@ -8,11 +8,11 @@
     width: 10em; */
     display: flex;
     justify-content: center;
-    /* background: #ffffff; */
+    /* background: #000000; */
     flex-direction: column;
     color: white;
     text-align: center;
-    margin: 1em auto;
+    /* margin: 1em auto; */
     text-shadow: 0 0 1px #333; /* so one can see fadeBgColor properly */
   }
   

@@ -1,676 +1,904 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mis quince</title>
-  <link rel="stylesheet" href="css/app.css"> 
-   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/navbar.css"> 
-  <!-- <link rel="stylesheet" href="css/profile.css"> -->
-  <script src="https://kit.fontawesome.com/dd84e1b5c1.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/swiffy-slider.min.css">
+
+  <title>Milagros-Mis Quince</title>
+
+  <meta name="description" content="Invitaciones para eventos">
+  <meta name="author" content="Desarrollado por Nadia Veronica Jara - nadia.vero8787@gmail.com">
+
+  <meta property="og:title" content="- Mis XV años - - Milagros Nahiara">
+  <meta property="og:type" content="article">
+  <meta property="og:url"
+    content="https://github.com/MilagrosMisquince/MilagrosMisquince.github.io/blob/main/img/vistap.jpg">
+  <meta property="og:description" content="Invitaciones digitales para eventos">
+  <meta property="og:image" content="https://MilagrosMisquince.github.io/img/vistap.jpg">
+  <meta property="og:image:width" content="561">
+  <meta property="og:image:height" content="935">
+
+
+
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Pacifico&family=Satisfy&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@500&family=Borel&family=Lilita+One&family=Montserrat:wght@500&family=Pacifico&family=Rubik+Mono+One&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans&family=Pacifico&family=Playball&family=Satisfy&display=swap" rel="stylesheet">  
-
-  <!-- <link rel="stylesheet" href="/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="/css/animate.css" type="text/css">
-
-  <!-- <link href="/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
-
-  <link rel="icon" href="img/logo.ico">
+  <!-- <link rel="stylesheet" href="/animations.min.css">   -->
+  <!-- <link rel="stylesheet" href="style_carousel.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <!-- <link rel="stylesheet" href="css/animations.css">   -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/animationsOnScroll.css">
+  <link rel="stylesheet" href="./css/responsive.css">
 
 
+  <script src="./js/script_carousel.js" defer></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
-  <!-- <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous"> -->
-  <meta property="og:title" content="-Te invito a mi fiesta-">
-<meta property="og:type" content="article">
-  <!-- <meta property="og:image" content="/img/repository-open-graph-template.png">
-  <meta property="og:image:width" content="1280">
-<meta property="og:image:height" content="640"> -->
+  <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
 
-<!-- <meta property="og:image" content="https://te-invito.github.io/img/vista%20previa.jpg">
-<meta property="og:url" content="https://te-invito.github.io/img/vista%20previa.jpg">
-<meta property="og:image:width" content="896">
-<meta property="og:image:height" content="448">  -->
 
-<!-- probando -->
-<meta name="description" content="Invitaciones para eventos">
-<meta name="author" content="Desarrollado por Nadia Veronica Jara - nadia.vero8787@gmail.com">
-<!-- <meta name="slug" content="ximenamisquincem "> -->
-<meta property="og:title" content="- Mis XV años - - Anahi">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://github.com/te-invito/te-invito.github.io/blob/main/img/vistap.jpg">
-<meta property="og:description" content="Invitaciones web para eventos">
-<meta property="og:image" content="https://te-invito.github.io/img/vistap.jpg"> 
-<meta property="og:image:width" content="561">
-<meta property="og:image:height" content="935">
-<script src="/js/lottie_svg.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
 
-<!-- <script src="/js/bootstrap.bundle.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script></head>
 
-<link rel="stylesheet" href="js/bootstrap2.min.css">
-<link rel="stylesheet" href="/css/animationsOnScroll.css">
-<link rel="stylesheet" href="/css/animate.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+ 
+  <link rel="stylesheet" href="/css/aos.css">
+  <script src="./js/aos.js"></script>
+  <link rel="stylesheet" href="./css/style.css">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
-<script src="/js/script_carousel.js"></script>
+  <link rel="stylesheet" href="./estiloss.css">
 
-<script>
-  let svgContainerLoader = document.querySelector('.loader');
 
-  let animLoader = bodymovin.loadAnimation({
-    wrapper: svgContainerLoader,
-    animType: 'svg',
-    loop: true,
-    path: _pathProducto + "img/loader.json"
-  });
-</script>
-
+</head>
 
 <body>
-  <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script> -->
 
-  <!-- <header class="topheader">
-    <nav class="topnav">
-      <a href="#" class="logo">
-        <div class="logotype">
+  <div class="contenedor">
+
+
+
+
+
+
+
+    <div class="portada">
+
+      <div class="element">
+
+        <img src="./img/milagros.png" alt="">
+
+        <div class="widget">
+          <h2 class="elementor-heading-title elementor-size-default">Mis 15 Años</h2>
+        </div>
+        <div class="flecha-continuar">
+          <lottie-player class="lottie" src="./json/Animation - flecha dorada.json" background="transparent" speed="1"
+            style="width: 140px; height: 140px;" loop autoplay></lottie-player>
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+  <div class="fecha">
+    <h3>SABADO 8 DE JUNIO, 21:00 a 05:00 hs</h3>
+
+
+  </div>     
+
+    <section>
+     <div class="flor">
+      <img src="./img/adorno-modal.png" class="animate animatable fadeInDown florinicial" alt=""> 
+    </div>
+      <div class="container_1">
+        <div class="row">
+          <div class="col-sm-6 salon">
+
+            <div class="box animate animatable fadeInLeft">
+              <img src="./img/salon.jpeg" alt="" width="370px" height="auto">
+            </div>
+
+          </div>
+
+          <div class="col-sm-6">
+            <!-- <div class="block animatable bounceInRight ubicacion">   -->
+            <div class="block animate animatable fadeInRight ubicacion">
+              <h2>Dirección</h2>
+              <h3>•Luis Vernet 5560 • Salón Multieventos Vernet</h3>
+
+              <button type="button" class="button btn btn-primary">
+                <a href="https://maps.app.goo.gl/FP8qNLCwh3mr5WiQ6">
+                  <span>ver ubicación</span>
+                </a>
+              </button>
+
+
+            </div>
+          </div>
 
         </div>
-      </a>
-      <button class="open-menu" aria-label="Abrir menú">
-        <img src="img/hamburger-icon.svg" alt="abrir menú" />
-      </button>
-      <ul class="menu">
-        <button class="close-menu" aria-label="Cerrar menú">
-          <img src="img/close-icon.svg" alt="cerrar menú" />
-        </button>
-        <li><a href="#inicio" class="selected">Inicio</a></li>
-        <li><a href="#Cuandoydonde">Cu&aacute;ndo y donde ?</a></li>
-        <li><a href="#ComoLlegar">C&oacute;mo llegar</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#confirmarAsistencia">Confirmar asistencia</a></li>
+        <!--row-->
 
-      </ul>
-    </nav>
-  </header> -->
 
-  <main>
-    <section class="inicio" id='inicio'>
-      
 
-      <div class="titulos">
+
+        <!-- <div class="block animatable bounceInRight">
+                            <h2>Dirección</h2>
+                          <h3>Curupayti 1156. Morón</h3>
+                          <h4>Salón: Dinastia Park Recepciones</h4>
+                          <button type="button" class="button">
+                            <a href="https://goo.gl/maps/G337E5vM8L2gZSL2A">
+                              <span class="elementor-button-text">ver ubicación</span>
+                            </a>
+                          </button>
+
+                          </div>
+                    </div>-->
+
+
+
+
+
+      </div>
+    </section>
+    <!--Cuenta regresiva-->
+
+
+    <section>
+
+      <div class="hero">
         <div class="animate animatable element">
-
-        <span class="titulo1">
-          <h1>Mis Quince Años</h1>
-        </span>
-
-        <span class="titulo2"><h2 class="nombre">Anahí</h2></span>
-
+          <h2 class="ctofalta">¿Cuánto falta?</h2>
         </div>
-        <span> <h1 class="cuantofalta">¿ Cuánto falta ?</h1></span>
+        <div id="cuenta" class="cuenta"></div>
       </div>
 
-      <div id="cuenta" class="cuenta"></div>
-      <div class="flecha-continuar">
-    
-        <lottie-player class="lottie" src="/archivos esp/down-scroll.json" background="transparent" speed="1" style="width: 70px; height: 70px;" loop autoplay></lottie-player>
-    
-      </div>
-    
-
-      <!-- <img src="img/pieverano.png" alt=""> -->
-      
     </section>
-  
-  
-
-
-
-    <section class="invitacion">
-        <div class="solapa animate animatable fadeInRight">
-        <p> Te invito a festejar mis quince años, espero que puedas venir a compartir conmigo esta noche soñada!</p>
-        </div>
-        <lottie-player class="lottie" src="/img/copas.json" background="transparent" speed="1" style="width: 120px; height: 120px;" loop autoplay></lottie-player>
-        
-    </section>
-
-    <section id="Cuandoydonde" class="cuandoydonde">
-        <span class="titulo1">
-            <h1>Cu&aacute;ndo y d&oacute;nde ?</h1>
-        </span>
-        <div class="solapa animate animatable fadeInLeft">
-          <p>El Sábado 16 de Diciembre <br>
-            Desde las 21:00 hasta las 05:00 am <br> 
-           En el salón "Estudio DL" <br>
-           Bartolomé Cataneo 6848 <br>
-           González Catán
-         </p>
-        </div>
-        <div class="boton">
-            <button type="button" class="btn btn-primary cllegar" data-bs-toggle="modal" data-bs-target="#myModal">
-            Como llegar
-            </button>
-        </div>
-        
-        <!-- The Modal -->
-          <div class="modal" id="myModal">
-            <div class="modal-dialog">
-              <div class="modal-content">
-          
-                  <!-- Modal Header -->
-                  <div class="modal-header">
-                  <h4 class="modal-title">Como llegar a la fiesta</h4>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                  </div>
-          
-                  <!-- Modal body -->
-                  <div class="modal-body modal-1">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13107.891206911914!2d-58.612002!3d-34.78146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc596f56e5215%3A0x2ec34f915a39f8f8!2sEstudio%20DL!5e0!3m2!1ses-419!2sar!4v1688140293340!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="eager" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-          
-                  <!-- Modal footer -->
-                  <div class="modal-footer">
-                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-                  </div>
-          
+    <!-- <section>
+        <div class="wrapper fcentral">
+          <div class="block animatable bounceIn foto">  
+              <div>
+                <img src="/img/a2.webp" alt="">
               </div>
           </div>
-    </section>
-
-       <!-- <div class="wrapper">
-          <h1>Como llegar</h1>
-        </span>
-
-          <div class="solapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3276.9729738532073!2d-58.61457672476169!3d-34.78145566690574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc596f56e5215%3A0x2ec34f915a39f8f8!2sEstudio%20DL!5e0!3m2!1ses-419!2sar!4v1687905526955!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-      </div>  -->
-      
-      
-      <!-- <div id="demo-modal" class="modal">
-        
-        <div class="modal__content">
-          
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26231.333701708663!2d-58.6099118!3d-34.7324937!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc56e002c7291%3A0x4c932937803091c6!2sSal%C3%B3n%20el%20amanecer!5e0!3m2!1ses-419!2sar!4v1677510903114!5m2!1ses-419!2sar"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
-
-            
-
-
-          <div class="modal__footer">
-            <p>Salon "El amanecer" Virgenes 3186, Gregorio de Laferrere.</p>
-          </div>
-
-          <a href="#" class="modal__close">&times;</a>
-        </div> -->
       </div>
-           
-    </section>
-
-    <section id="dressCode" class="dressCode">
-      <span class="titulo1">
-        <h1>Dress code</h1>
-      </span>
-      <div class="imagen_dress">
-        <lottie-player class="lottie" src="/img/json_dresscode.json" background="transparent" speed="1" style="width: 120px; height: 120px;" loop autoplay></lottie-player>
-        <h3>Elegante</h3>
-        <div class="solapa">
-          <img src="/img/dress3-1-1.png" alt=""> 
-        </div>  
-
-       
-      </div>
-
-
-    </section>
-    <section>
-        <div class="frase">
-            <span class="titulo1">
-                <h1>Un recorrido de estos 15 años</h1>
-            </span>
-    
-            <div class="solapa animate animatable fadeInRight">
-                <p>Junto a personas que son muy importantes en mi vida</p>
-            </div>
-        </div>
-         
-    </section>
-
-           <div class="animacion">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-            <lottie-player src="/img/f4XYHuDGsJ.json" background="transparent" speed="1" style="width: 90px; height: 90px;" loop autoplay></lottie-player>
-          </div>
       
-    <section class="galeria" id="galeria">
-      
-      
-      
+    </section> -->
 
-      <!-- <div class="swiffy-slider">
-        <ul class="slider-container">
-          <li><img src="img/f2.jpg" style="max-width: 100%;height: auto;"></li>
-          <li><img src="img/f3.jpg" style="max-width: 100%;height: auto;"></li>
-          <li><img src="img/f4.jpg" style="max-width: 100%;height: auto;"></li>
-          <li><img src="img/f5.jpg" style="max-width: 100%;height: auto;"></li>
-          <li><img src="img/f6.jpg" style="max-width: 100%;height: auto;"></li>
-        </ul>
 
-        <button type="button" class="slider-nav"></button>
-        <button type="button" class="slider-nav slider-nav-next"></button>
 
-        <div class="slider-indicators">
-          <button class="active"></button>
-          <button></button>
-          <button></button>
-        </div>
-      </div> -->
 
-      <!-- <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="/img/f1.jpeg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="/img/f2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="/img/f3.jpeg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button> 
-      </div> -->
+    <section id="galeria" class="galeria">
+      <picture>
+        <!-- <source type="image/webp" srcset="https://fixdate.io/modelo-invitacion/111/img/Grupo03.webp">
+        <source type="image/png" srcset="https://fixdate.io/modelo-invitacion/111/img/Grupo03.png"> -->
+        <img class="adorno adorno-1 unaflor" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" data-aos-once="false" src="./img/flores de galeria.png" alt="" loading="lazy">
+      </picture>
+
 
       <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="2000">
-            <img src="/img/f1.jpeg" class="d-block w-100" alt="...">
+            <img src="./img/f-1.jpeg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="/img/f2.jpg" class="d-block w-100" alt="...">
+            <img src="./img/f-2.jpeg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="/img/f3.jpeg" class="d-block w-100" alt="...">
+            <img src="./img/f-3.jpeg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="/img/f4.jpeg" class="d-block w-100" alt="...">
+            <img src="./img/f-4.jpeg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
 
-      
+    </section>
+    <section>
+      <div class="regalos">
+        <h1 class="fadeInDown animate animatable">Mesa de Regalos</h1>
+        <p>El mejor regalo es tu presencia. Pero si algo me quieres obsequiar en efectivo lo sabre apreciar!</p>
+
+        <button class="accordion">DATOS BANCARIOS</button>
+
+        <div class="panel">
+          <p>Milagros Nahiara Tejeda Ledesma</p>
+            <p>CVU: 0000003100012437865945</p>
+            <p>Alias: milagrosR912</p>
+            <p>Mercado Pago</p>
+          </p>
+        </div>
+
+      </div>
+
 
     </section>
 
-    <section class="insta">
+    <section class="insta"> 
+      <div class="row">
+        <div class="col-sm">
+          <!-- <div class="block animatable bounceInLeft titulohash"> -->
+          <div class="block animate animatable fadeInLeft titulohash">
+
+            <h3>DURANTE EL CUMPLEAÑOS UTILIZA EL HASHTAG
+            </h3>
+
+          </div>
+
+          <div class="block animate animatable fadeInRight hash">
+            <h1>#Mis15Milu</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="contentinsta">
+        <lottie-player class="lottie" src="./json/insta.json" background="transparent" speed="1"
+          style="width: 140px; height: 140px;" loop autoplay></lottie-player>
+
+        <button type="button" class="button btn">
+          <a href="https://www.instagram.com/">
+            <span>VER EN INSTAGRAM</span>
+          </a>
+        </button>
+
+      </div>
+      <section class="ceremonia-fiesta">
+        <picture>
+
+          <img class="adorno adorno-1 aos-init" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000"
+            data-aos-once="false" src="./img/Grupo02_a copia.png" alt="" loading="lazy">
+        </picture>
+      
+        <picture>
+          <img class="adorno adorno-2 aos-init" data-aos="fade-right" data-aos-delay="450" data-aos-duration="1000"
+            data-aos-once="false" src="./img/Grupo02_b copia.png" alt="" loading="lazy">
+        </picture>
+      
+      
+        <picture>
+          <img class="adorno adorno-3 aos-init" data-aos="fade-right" data-aos-delay="650" data-aos-duration="1000"
+            data-aos-once="false" src="./img/Grupo02_c copia.png" alt="" loading="lazy">
+        </picture>
+        
+
+      </section>
+
+           <!-- probando -->
+<!-- <section class="ceremonia-fiesta">
+
+  <picture>
+
+    <img class="adorno adorno-1 aos-init" data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000"
+      data-aos-once="false" src="./img/Grupo02_a copia.png" alt="" loading="lazy">
+  </picture>
+
+  <picture>
+    <img class="adorno adorno-2 aos-init" data-aos="fade-right" data-aos-delay="450" data-aos-duration="1000"
+      data-aos-once="false" src="./img/Grupo02_b copia.png" alt="" loading="lazy">
+  </picture>
+
+
+  <picture>
+    <img class="adorno adorno-3 aos-init" data-aos="fade-right" data-aos-delay="650" data-aos-duration="1000"
+      data-aos-once="false" src="./img/Grupo02_c copia.png" alt="" loading="lazy">
+  </picture>
+
+</section> -->
+    
+<!--fin probando-->
+
+    </section>
+
+
+   
+
+    <!-- <section>
+      <div class="flor">
+        <img src="./img/6.png" alt="">
+
+      </div> -->
+
+
+
+
+      <!-- <div class="regalos">
+        <h1 class="fadeInDown animate animatable">Mesa de Regalos</h1>
+        <p>El mejor regalo es tu presencia. Pero si algo me quieres obsequiar lo sabre apreciar!</p>
+
+        <button class="accordion">DATO!</button>
+
+        <div class="panel">
+          <p>En el salón habrá una urna disponible</p>
+
+        </div>
+
+      </div> -->
+
+      <!-- <img src="./img/5.png" alt="">
+
+    </section> -->
+
+
+    <!-- <section class="insta">
        <div class="row">
           <div class="col-sm">
-            <!-- <div class="block animatable bounceInLeft titulohash"> -->
-              <div class="animate animatable fadeInLeft">
-                <h3>DURANTE EL CUMPLEAÑOS UTILIZA EL HASHTAG</h3>
-              </div>
+              <div class="block animate animatable fadeInLeft titulohash">
+                
+                <h3>DURANTE EL CUMPLEAÑOS UTILIZA EL HASHTAG
+                </h3> 
+ 
+            </div>
 
-              <div class="animate animatable fadeInRight hash">
-                <h3>#MIS15ANAHI</h3>  
-              </div>
+            <div class="block animate animatable fadeInRight hash">
+                <h1>#zaira15años</h1>  
+            </div>
           </div>
       </div>
 
         <div class="contentinsta">
-          <lottie-player class="lottie" src="./archivos esp/instagram.json" background="transparent" speed="1" style="width: 140px; height: 140px;" loop autoplay></lottie-player>  
+          <lottie-player class="lottie" src="./json/insta.json" background="transparent" speed="1" style="width: 140px; height: 140px;" loop autoplay></lottie-player>  
 
-        <div class="boton">
-              <button type="button" class="btn btn-primary button cllegar">
-              <a href="https://www.instagram.com/explore/tags/MIS15ANAHI/">
-                VER EN INSTAGRAM
-              </a>
-            </button>
-
-
+          <button type="button" class="button">
+            <a href="https://www.instagram.com/explore/tags/#zaira15años/">
+              <span class="elementor-button-text">VER EN INSTAGRAM</span>
+            </a>
+          </button>
 
         </div>
+    </section> -->
 
 
-        </div>
-    </section>
-
-
-
-    <!--fin galeria-->
-
-    
     <!--Audio-->
-
-    <!-- <div>
+    <!-- 
+      <div>
       <audio id="audio" loop="">
-        <source src="archivos esp/harry-styles-as-it-was.mp3"
+        <source src="/audio/Coldplay  A Sky Full Of Stars Official audio.mp3"
           type="audio/mp3">
       </audio>
+
       <div class="playPauseBTN" id="playPauseBTN" onclick="playPause()" alt="">
         <i class="fa-solid fa-music fa-beat" style="color: #ffffff;"></i>
+        
       </div>
       <span class="material-icons-outlined">
       </span>
-
-    </div> -->
-
-
+      
+    </div>  -->
 
 
-    <section id="confirmarAsistencia" class="confirmarAsistencia">
-      <span class="titulo1" class="asistencia">
-        <h1 >Confirmar Asistencia</h1>
-      </span>
-      <form class="contact-form">
-        <!--era contact-Form-->
-        <div class="container_2">
-          
-          <!-- <h3 class="asistencia">Confirmar Asistencia</h3> -->
-          <input type="text" placeholder="Ingresar Nombre y Apellido" name="nombreyApellido" required>
+    <section class="canciones">
 
 
-          <ul>
-            <li>
-              <input type="radio" id="f-option" name="asistencia" value="si" required>
-              <label for="f-option">Asistir&eacute;</label>
 
-              <div class="check"></div>
-            </li>
+      <lottie-player class="lottie" src="./json/animation_music.json" background="transparent" speed="1"
+        style="width: 140px; height: 140px;" loop autoplay></lottie-player>
 
-            <li>
-              <input type="radio" id="s-option" name="asistencia" value="no">
-              <label for="s-option">No asistir&eacute;</label>
+      <div class="box animate animatable fadeInRight">
 
-              <div class="check">
-                <div class="inside"></div>
-              </div>
-            </li>
+        <h2>¿Que canciones no pueden faltar?</h2>
+      </div>
+      <div class="box animate animatable fadeInLeft">
+        <h3>SUGERI LAS CANCIONES QUE NO PUEDEN FALTAR EN MI FIESTA</h3>
+      </div>
+      <section id="confirmarAsistencia" class="confirmarAsistencia">
+
+        <form id="canciones" class="canciones">
+          <div class="box-input">
+
+            <input name="nombre" id="NombreCancion" type="text" placeholder="Nombre de Cancion *" required>
+            <!-- <span data-placeholder="Escriba su Nombre"></span> -->
+          </div>
+          <div class="box-input">
+
+            <input name="Autor" id="Autor" type="text" placeholder="Autor *">
+            <!-- <span data-placeholder="Escriba sus Apellidos"></span> -->
+          </div>
+          <div class="box-input">
+
+            <input name="Link" id="Link" type="text" placeholder="Link Spotify/Youtube">
+            <!-- <span data-placeholder="Escriba sus Apellidos"></span> -->
+          </div>
+          <!-- <div class="box-input">
+                <input name="email" id="email" type="email" required>
+                <span data-placeholder="Escriba su Correo Electrónico"></span>
+            </div> -->
+          <ul class="asistencia">
+            <!-- <li class="asistencia">
+                <input type="radio" id="f-option" name="asistencia" value="si" required>
+                <label for="f-option">Si, confirmo</label>
+      
+                <div class="check"></div>
+              </li> -->
+
+            <!-- <li>
+                <input type="radio" id="s-option" name="asistencia" value="no">
+                <label for="s-option">No puedo :(</label>
+      
+                <div class="check">
+                  <div class="inside"></div>
+                </div>
+              </li> -->
           </ul>
-          <div class="datoimport">
-            <h3>Querés enviarnos alg&uacute;n dato importante?</h3>
-          
-
-
-
-          <textarea name="info_adicional" id="" cols="30" rows="5" placeholder="Podes comentarnos si tenes alguna restriccion alimentaria!" class="estilotextarea4">
-          </textarea>
-        </div>
-          <div class="envio">
-            <input class="btn btn-primary" type="submit"  value="Enviar confirmaci&oacute;n"></input>
-          </div>
-          
-
-          <div class="contact-form-loader none">
-        
-            <img src="/img/spinning-circles.svg" alt="Cargando">
-            <p class="cargando">Enviando</p>
-          </div> 
-          <div class="contact-form-response none">
-            <p>Enviado. Gracias!!</p>
-          </div>
-
-
-
-          <!--Campos configuracion-->
-           <input type="hidden" name="_subject" value="Nueva confirmacion de invitado!">
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_template" value="table"> 
-
-
-          <!-- </ul> -->
-        </div>
-
-      
-
-
-      </form>
-      
-      <script>
-       var audio = document.getElementById('audio');
-        var playPauseBTN = document.getElementById('playPauseBTN');
-        var count = 0;
+          <button id="submit1" type="submit" class="botonw"><i class="fab fa-whatsapp"></i> Enviar WhatsApp</button>
+        </form>
+ 
+        <script type="text/javascript">
+          $(".box-input input").on("focus", function(){
+              $(this).addClass("focus");
+          });
     
-        function playPause() {
-          const h2 = document.getElementById("playPauseBTN");
-          
-          if (count == 0) {
-            count = 1;
-            audio.play();
-            let html = "<i class='fa-solid fa-pause' style='color: #ffffff;'/>";
-            // h2.insertAdjacentHTML("", html);
-            playPauseBTN.innerHTML = "<i class='fa-solid fa-pause' style='color: #ffffff;''></>";
-            // playPauseBTN.innerHTML = "<b>PAUSA</b>";
-          } else {
-            count = 0;
-            audio.pause();
-             let html = "<i class='fa-solid fa-play' style='color: #ffffff;''></i>";
-            // h2.insertAdjacentHTML("afterbegin", html);
-             playPauseBTN.innerHTML = "<i class='fa-solid fa-play' style='color: #ffffff;''></i>";
-          } }
-        function stop() {
-          playPause()
-          audio.pause();
-          audio.currentTime = 0;
-          playPauseBTN.innerHTML = "Play ►";
-        }
+          $(".box-input input").on("blur", function(){
+              if($(this).val() == ""){
+                  $(this).removeClass("focus");
+              }
+          });
+    
       </script> 
 
-<script>
-
- const d = document;
-
-  function contactForm() { 
-   const $form = d.querySelector(".contact-form"),
-      $inputs = d.querySelectorAll(".contact-form[required]");
-
-    d.addEventListener("submit", (e) => {
-      e.preventDefault();
-/*      alert("Enviando formulario");*/
-      const $loader = d.querySelector(".contact-form-loader"),
-        $response = d.querySelector(".contact-form-response");
-        $loader.classList.remove("none");
-
-      fetch("https://formsubmit.co/ajax/nadia.vero8787@gmail.com", {
-        method: "POST",
-        body: new FormData(e.target)
-      })
-      .then(res=>res.ok ?  res.json():Promise.reject(res))
-      .then(json=>{
-        console.log(json);
-        $loader.classList.add("none");
-        $response.classList.remove("none");
-        $form.reset();
-
-      })
-      .catch(err=>{
-        console.log(err);
-       /* $response.innerHTML = 'Error ${err.status}:${message}';*/
-      })
-        
-       .finally(()=>setTimeout(()=>{
-          $response.classList.add("none");
-          $loader.classList.add("none")
-          $response.innerHTML = "";
-        }, 10000)); 
+     
 
 
-    });
-  }
-  d.addEventListener("DOMContentLoaded", contactForm)
-</script>
+<!-- <div class="contact-form-response1 none enviado1">
+          <p>Enviado. Gracias!!</p>
+        </div> -->
+      </section>
+    </section>
+
+
+
+    <section>
+      <!-- <div class="row">    -->
+      <div>
+        <!-- <div class="block animatable animated animate fadeInLeft dresscode"> -->
+        <div class="block animate animatable fadeInLeft dresscode">
+          <h1>Dress code</h1>
+
+
+        </div>
+
+        <div class="block animatable animated bounceInRight ayuda">
+          <h1>Elegante-Sport</h1>
+          
+        </div>
+      </div>
+    </section>
+
+    <script>
+      $(document).ready(function () {
+        $("#miBoton").click(function () {
+          $("#miModal").modal('show');
+        });
+      });
+    </script>
+
+
+
+
+    <section class="sectionconfirma">
+      <div class="asistir">
+
+        <div class="contformcent">
+          <!-- <div class="titulo_confirmacion"> -->
+          <div class="titulo_confirmacion animate animatable fadeInRight">
+
+            <h2>Confirmación</h2>
+          </div>
+          <div class="indicaciones">
+            <p class="titulo1">Completa el siguiente formulario para confirmar tu asistencia.
+            </p>
+            <p class="tespero">Te espero!</p>
+          </div>
+
+          <form id="formulario" class="formulario">
+            <div class="box-input">
+
+              <input name="nombre" id="nombre" type="text" placeholder="Nombre" required>
+              <!-- <span data-placeholder="Escriba su Nombre"></span> -->
+            </div>
+            <div class="box-input">
+
+              <input name="apellidos" id="apellidos" type="text" placeholder="Apellido">
+              <!-- <span data-placeholder="Escriba sus Apellidos"></span> -->
+            </div>
+            <!-- <div class="box-input">
+                <input name="email" id="email" type="email" required>
+                <span data-placeholder="Escriba su Correo Electrónico"></span>
+            </div> -->
+            <ul class="asistencia">
+              <li class="asistencia">
+                <input type="radio" id="f-option" name="asistencia" class="asistencia" value="si" required>
+                <label for="f-option">Si, confirmo</label>
+
+                <div class="check"></div>
+              </li>
+
+              <li class="asistencia">
+                <input type="radio" id="s-option" name="asistencia" class="asistencia" value="no">
+                <label for="s-option">No puedo :(</label>
+
+                <div class="check">
+                  <div class="inside"></div>
+                </div>
+              </li>
+            </ul>
+
+            <button id="submit" type="submit" class="botonw"><i class="fab fa-whatsapp"></i> Enviar WhatsApp</button>
+          </form>
+          <script type="text/javascript">
+            $(".box-input input").on("focus", function(){
+                $(this).addClass("focus");
+            });
+      
+            $(".box-input input").on("blur", function(){
+                if($(this).val() == ""){
+                    $(this).removeClass("focus");
+                }
+            });
+      
+        </script>
+
+
+        </div>
+
+
+      </div>
+
 
     </section>
-    
-    <div class="regalo">
-       <span class="titulo1">
-            <h1>Regalo</h1>
-        </span>
-         
-      <lottie-player  src="/archivos esp/gift.json" background="transparent" speed="1" style="width: 160px; height: 160px;" loop autoplay></lottie-player>
+    <section class="fadeInDown animate animatable final">
+      <img src="./img/flores final.png" alt="">
+    </section>
 
-    </div>
-  <section class="regalo">
-      
-      <div class="frase">
-        <!-- <span class="titulo1">
-            <h1>Un recorrido de estos 15 años</h1>
-        </span>
-         -->
-       
-        <div class="solapa animate animatable fadeInRight">
-            <p>Si deseas regalarme algo más que tu hermosa presencia...</p>
-            
-        </div>
-      </div>
+    <script>
+      const form = document.getElementById('myForm');
+      const confirmationDiv = document.getElementById('confirmation');
+      const loader = document.getElementById('contact-form-loader');
 
 
-      <div class="boton">
-        <button type="button" class="btn btn-primary cllegar" data-bs-toggle="modal" data-bs-target="#myModal-2">
-        ALIAS/CBU
-        </button>
-    </div>
-    
-    <!-- The Modal -->
-   
-<div class="modal fade" id="myModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">CBU/ALIAS</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Nro_CBU / ALIAS
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-      </div>
-    </div>
-  </div>
-</div>
-  </section>
-      
-      <div class="fotofinal animate animatable fadeInLeft">
-          <img src="/img/vistaprevia.jpg" alt="">
-      </div>
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
 
-      <div>
-        <audio id="track">
-       <source src="/archivos esp/harry-styles-as-it-was.mp3">
-       </audio>
-    
-       <div id="contenedor-play">
-        <div id="player-container">
-          <div id="play-pause" class="play">Play</div> 
-        </div>
-       </div>
-       
-           
-       
-       </div>
-      
+        // Enviar el formulario utilizando Fetch API
+        const formData = new FormData(form);
+        loader.style.display = 'block';
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+
+        });
+
+        if (response.ok) {
+          //form.style.display = 'none';
+          loader.style.display = 'none';
+          form.reset();
+          confirmationDiv.style.display = 'block';
+
+          setTimeout(() => {
+            confirmationDiv.style.display = 'none';
+          }, 5000); // Ocultar el mensaje de confirmación después de 5 segundos (5000 ms)
+
+        }
+      });
+    </script>
+
+    <script>
+      jQuery(function ($) {
+        /*probando*/
+
+        var controller = new ScrollMagic.Controller();
+
+        // loop through all elements
+        $('.fade-in').each(function () {
+
+          var tween = new TimelineMax();
+          var fromLeftFrom = TweenMax.from($(this), 1, { x: -500, opacity: 0, ease: Linear.easeNone });
+          var fromLeftTo = TweenMax.to($(this), 1, { x: 0, opacity: 1, ease: Linear.easeNone });
+
+          tween
+            .add(fromLeftFrom)
+            .add(fromLeftTo)
+
+          var scene = new ScrollMagic.Scene({ triggerElement: this, offset: '50%' })
+            .setTween(tween) // trigger a TweenMax.to tween
+            .addIndicators()
+            .addTo(controller);
+
+        });
+
+      });
+    </script>
 
 
-  </main>
+
+
+
+
+
+
     <footer class="pie">
-      <h6>Diseñado con</h6> &nbsp;<i class="fa-solid fa-heart fa-beat fa-xs" style="color: #d60004;"></i>
+      <h6>Diseñado con</h6> &nbsp;<i class="fa-solid fa-heart fa-beat fa-xs" style="color: #ff0000;"></i>
       &nbsp; <h6>por</h6> &nbsp;
-      <a href="https://www.facebook.com/digitalproject10"><h6>Digital Project</h6></a>
+      <a href="https://www.facebook.com/digitalproject10">
+        <h6>Digital Project</h6>
+      </a>
     </footer>
 
+    <div>
+
+      <audio id="track">
+        <source src="./audio/Coldplay - Yellow (Official Video).mp3" type="audio/mpeg">
+        <source src="./audio/Coldplay-Yellow-_Official-Video_.wav" type="audio/wav">
+      </audio>
+
+      <div id="contenedor-play">
+        <div id="player-container">
+          <div id="play-pause" class="play">Play</div>
+        </div>
+      </div>
 
 
-    
+
+    </div>
+
+    <script>
+      var track = document.getElementById("track");
+
+      var controlBtn = document.getElementById("play-pause");
+
+      function playPause() {
+        if (track.paused) {
+          track.play();
+          //controlBtn.textContent = "Pause";
+          controlBtn.className = "pause";
+        } else {
+          track.pause();
+          //controlBtn.textContent = "Play";
+          controlBtn.className = "play";
+        }
+      }
+
+      controlBtn.addEventListener("click", playPause);
+      track.addEventListener("ended", function () {
+        controlBtn.className = "play";
+      });
+
+    </script>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
-    defer></script>
-  <script src="js/simplyCountdown.min.js"></script>
-  <script src="js/countdown.js"></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"> -->
-  
+
+
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+  <script src="./js/simplyCountdown.min.js"></script>
+  <script src="./js/countdown.js"></script>
+  <script defer src="./js/app.js"></script>
+
+  <script>
+    const slider = document.querySelector('.slider');
+    const prevBtn = document.querySelector('.prevBtn');
+    const nextBtn = document.querySelector('.nextBtn');
+    const itemWidth = slider.querySelector('.item').offsetWidth;
+    const numItemsPerPage = 3; // Cambia este valor según la cantidad de elementos por slider
+    let currentIndex = 0;
+
+    function updateSliderPosition() {
+      slider.style.transform = `translateX(-${currentIndex * itemWidth * numItemsPerPage}px)`;
+    }
+
+    nextBtn.addEventListener('click', () => {
+      if (currentIndex < Math.floor(slider.children.length / numItemsPerPage) - 1) {
+        currentIndex++;
+        updateSliderPosition();
+      }
+    });
+
+    prevBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+        updateSliderPosition();
+      }
+    });
+
   </script>
-  <script src="js/galeria.js"></script>
-
-  <script defer src="js/app.js"></script>
 
 
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
 
- <script>
-  var track = document.getElementById("track");
-  
-  var controlBtn = document.getElementById("play-pause");
-  
-  function playPause() {
-  if (track.paused) {
-      track.play();
-      //controlBtn.textContent = "Pause";
-      controlBtn.className = "pause";
-  } else { 
-      track.pause();
-       //controlBtn.textContent = "Play";
-      controlBtn.className = "play";
-  }
-  }
-  
-  controlBtn.addEventListener("click", playPause);
-  track.addEventListener("ended", function() {
-  controlBtn.className = "play";
-  });
-  
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src='./js/css3-animate-it.js'></script>
+
+
+
+
+  <script>
+
+    const d = document;
+
+    function contactForm() {
+      const $form = d.querySelector(".contact-form"),
+        $inputs = d.querySelectorAll(".contact-form[required]");
+
+      d.addEventListener("submit", (e) => {
+        e.preventDefault();
+        /* alert("Enviando formulario");*/
+        const $loader = d.querySelector(".contact-form-loader"),
+          $response = d.querySelector(".contact-form-response1");
+        $loader.classList.remove("none");
+
+
+
+        fetch("https://formsubmit.co/ajax/@gmail.com", {
+          method: "POST",
+          body: new FormData(e.target)
+        })
+          .then(res => res.ok ? res.json() : Promise.reject(res))
+          .then(json => {
+            console.log(json);
+            $loader.classList.add("none");
+            $response.classList.remove("none");
+            $form.reset();
+
+          })
+          .catch(err => {
+            console.log(err);
+            /* $response.innerHTML = 'Error ${err.status}:${message}';*/
+          })
+
+          .finally(() => setTimeout(() => {
+            $response.classList.add("none");
+            $loader.classList.add("none")
+            $response.innerHTML = "";
+          }, 7000));
+
+
+      });
+    }
+    d.addEventListener("DOMContentLoaded", contactForm)
   </script>
 
-<script src="/js/animationsOnScroll.js"></script> 
+  <!---->
 
 
 
 
+
+
+
+  <!---->
+
+
+  <script>
+    var audio = document.getElementById('audio');
+    var playPauseBTN = document.getElementById('playPauseBTN');
+    var count = 0;
+
+    function playPause() {
+      const h2 = document.getElementById("playPauseBTN");
+
+      if (count == 0) {
+        count = 1;
+        audio.play();
+        let html = "<i class='fa-solid fa-pause' style='color: #ffffff;'/>";
+        // h2.insertAdjacentHTML("", html);
+        playPauseBTN.innerHTML = "<i class='fa-solid fa-pause' style='color: #ffffff;''></>";
+        // playPauseBTN.innerHTML = "<b>PAUSA</b>";
+      } else {
+        count = 0;
+        audio.pause();
+        let html = "<i class='fa-solid fa-play' style='color: #ffffff;''></i>";
+        // h2.insertAdjacentHTML("afterbegin", html);
+        playPauseBTN.innerHTML = "<i class='fa-solid fa-play' style='color: #ffffff;''></i>";
+      }
+    }
+    function stop() {
+      playPause()
+      audio.pause();
+      audio.currentTime = 0;
+      playPauseBTN.innerHTML = "Play ►";
+    }
+  </script>
+  <script>
+    //scroll
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const element = document.querySelector(".elemento");
+      const fadeInLeftClass = "fadeInLeft";
+
+      function fadeInLeftOnScroll() {
+        const elementPosition = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (elementPosition - windowHeight <= 0) {
+          element.classList.add(fadeInLeftClass);
+          window.removeEventListener("scroll", fadeInLeftOnScroll);
+        }
+      }
+
+      window.addEventListener("scroll", fadeInLeftOnScroll);
+    });
+
+  </script>
+  <script src="./js/animationsOnScroll.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+  <script src="./js/whatsapp.js"></script>
+  <script src="./js/canciones.js"></script>
+
+  <script>
+    var prealoaderOption = $(window);
+
+    prealoaderOption.on("load", function () {
+
+     setTimeout(function () {
+        AOS.init();
+      }, 100);
+
+    });
+  </script>
 </body>
 
 </html>

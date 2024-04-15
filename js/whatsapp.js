@@ -12,10 +12,10 @@ function isMobile() {
 const formulario = document.querySelector('#formulario');
 const buttonSubmit = document.querySelector('#submit');
 const urlDesktop = 'https://web.whatsapp.com/';
-const urlMobile = 'https://wa.me/';
-    //'whatsapp://';
+const urlMobile = 'whatsapp://';
 const telefono = '541138624909';
 let formu20 =document.querySelector('#formulario');
+let isIphone = /iPhone|iPad|iPod/i.test(navigator.userAgent);
 
 
 formulario.addEventListener('submit', (event) => {
@@ -27,12 +27,23 @@ formulario.addEventListener('submit', (event) => {
         let apellidos = document.querySelector('#apellidos').value
         // let asistencia = document.querySelector('.asistencia').value
         let asistencia = $('input[name="asistencia"]:checked').val();
+        
+        let numeroCodificado = encodeURIComponent(telefono);
         let mensaje = 'send?phone=' + telefono + '&text=*_Confirmacion de asistencia_*%0A*¿Cual es tu nombre?*%0A' + nombre + '%0A*¿Cuáles es tu apellidos?*%0A' + apellidos + '%0A*¿Asistiras al evento?*%0A' + asistencia +''
+        let mensaje1 = '&text=*_Confirmacion de asistencia_*%0A*¿Cual es tu nombre?*%0A' + nombre + '%0A*¿Cuál es es tu apellido?*%0A' + apellidos + '%0A*¿Asistiras al evento?*%0A' + asistencia +''
+        let mensajeCodificado = encodeURIComponent(mensaje1);
+
         if(isMobile()) {
+            if (isIphone) {
+                url = `https://api.whatsapp.com/send?phone=${numeroCodificado}&text=${mensajeCodificado}`;
+            }
+            else
             window.open(urlMobile + mensaje, '_blank')
-        }else{
+        }else
+        {
             window.open(urlDesktop + mensaje, '_blank')
         }
+
         buttonSubmit.innerHTML = '<i class="fab fa-whatsapp"></i> Enviar WhatsApp'
         buttonSubmit.disabled = false
         formu20.reset();

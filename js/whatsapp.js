@@ -36,6 +36,7 @@ formulario.addEventListener('submit', (event) => {
         if(isMobile()) {
             if (isIphone) {
                 url = `https://api.whatsapp.com/send?phone=${numeroCodificado}&text=${mensajeCodificado}`;
+                window.open(url, '_blank');
             }
             else
             window.open(urlMobile + mensaje, '_blank')

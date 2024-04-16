@@ -30,8 +30,9 @@ formulario.addEventListener('submit', (event) => {
         
         let numeroCodificado = encodeURIComponent(telefono);
         let mensaje = 'send?phone=' + telefono + '&text=*_Confirmacion de asistencia_*%0A*¿Cual es tu nombre?*%0A' + nombre + '%0A*¿Cuáles es tu apellidos?*%0A' + apellidos + '%0A*¿Asistiras al evento?*%0A' + asistencia +''
-        let mensaje1 = '&text=*_Confirmacion de asistencia_*%0A*¿Cual es tu nombre?*%0A' + nombre + '%0A*¿Cuáles es tu apellidos?*%0A' + apellidos + '%0A*¿Asistiras al evento?*%0A' + asistencia +''
-        let mensajeCodificado = encodeURIComponent(mensaje1);
+        // let mensaje1 = '&text=*_Confirmacion de asistencia_*%0A*¿Cual es tu nombre?*%0A' + nombre + '%0A*¿Cuáles es tu apellidos?*%0A' + apellidos + '%0A*¿Asistiras al evento?*%0A' + asistencia +''
+        let mensajeprueba ='Confirmacion de asistencia_* ¿Cual es tu nombre?*' + nombre + '¿Cuál es tu apellidos?' + apellidos + '*¿Asistiras al evento?*' + asistencia +''
+        let mensajeCodificado = encodeURIComponent(mensajeprueba);
 
         if(isMobile()) {
             if (isIphone) {

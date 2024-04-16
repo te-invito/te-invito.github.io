@@ -31,15 +31,16 @@ formulario.addEventListener('submit', (event) => {
         let numeroCodificado = encodeURIComponent(telefono);
         let mensaje = 'send?phone=' + telefono + '&text=*_Confirmacion de asistencia_*%0A*¿Cual es tu nombre?*%0A' + nombre + '%0A*¿Cuáles es tu apellidos?*%0A' + apellidos + '%0A*¿Asistiras al evento?*%0A' + asistencia +''
         // let mensaje1 = '&text=*_Confirmacion de asistencia_*%0A*¿Cual es tu nombre?*%0A' + nombre + '%0A*¿Cuáles es tu apellidos?*%0A' + apellidos + '%0A*¿Asistiras al evento?*%0A' + asistencia +''
-        let mensajeprueba ='Confirmacion de asistencia_* ¿Cual es tu nombre?*' + nombre + '¿Cuál es tu apellidos?' + apellidos + '*¿Asistiras al evento?*' + asistencia +''
+        let mensajeprueba ='Confirmacion de asistencia ¿Cual es tu nombre?' + nombre + '¿Cuál es tu apellidos?' + apellidos + '*¿Asistiras al evento?*' + asistencia +''
         let mensajeCodificado = encodeURIComponent(mensajeprueba);
+        console.log(mensajeprueba);
 
         if(isMobile()) {
             if (isIphone) {
-                // url = `https://api.whatsapp.com/send?phone=${numeroCodificado}&text=${mensajeCodificado}`;
-                // window.open(url, '_blank');
-                url = `whatsapp://send?phone=${numeroCodificado}&text=${mensajeCodificado}`;
-                window.location.href = url; // Abre la aplicación de WhatsApp directamente
+                url = `https://api.whatsapp.com/send?phone=${numeroCodificado}&text=${mensajeCodificado}`;
+                window.open(url, '_blank');
+               // url = `whatsapp://send?phone=${numeroCodificado}&text=${mensajeCodificado}`;
+               // window.location.href = url; // Abre la aplicación de WhatsApp directamente
             }
             else
             window.open(urlMobile + mensaje, '_blank')

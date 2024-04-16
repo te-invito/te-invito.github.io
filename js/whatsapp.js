@@ -36,14 +36,14 @@ formulario.addEventListener('submit', (event) => {
         console.log(mensajeprueba);
 
         if(isMobile()) {
-            if (isIphone) {
+            if (true) {
                 // url = `https://api.whatsapp.com/send?phone=${numeroCodificado}&text=${mensajeCodificado}`;
                 // window.open(url, '_blank');
 
-               url = 'whatsapp://send?phone='+ telefono + '&text=*_Confirmacion de asistencia_*%0A*¿Cual es tu nombre?*%0A' + nombre + '%0A*¿Cuáles es tu apellidos?*%0A' + apellidos + '%0A*¿Asistiras al evento?*%0A' + asistencia +'';
-               window.open(url, '_blank');
+            //    url = 'whatsapp://send?phone='+telefono+'&text=*_Confirmacion de asistencia_*%0A*¿Cual es tu nombre?*%0A' + nombre + '%0A*¿Cuáles es tu apellidos?*%0A' + apellidos + '%0A*¿Asistiras al evento?*%0A' + asistencia +'';
+               url = `whatsapp://send?phone=${numeroCodificado}&text=${mensajeCodificado}`;
 
-            //    window.location.href = url;
+               window.location.href = url;
                 // Abre la aplicación de WhatsApp directamente
             }
             else

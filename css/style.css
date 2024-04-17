@@ -37,7 +37,7 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: var(--color-2);
+  /* background: var(--color-2); */
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -149,6 +149,14 @@ span#error-form {
 
 .modal-body {
   flex: inherit;
+  padding: 0;
+}
+@media (max-width: 375px){
+.modal-body > iframe {
+  width: 300px;
+  height: 580px;
+
+}
 }
 
 .modal-transparent .modal-content {

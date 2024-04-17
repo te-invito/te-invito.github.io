@@ -16,6 +16,27 @@ body {
     /* background-color:#235D3A; */
   
   }
+  .iphone{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #2F855A;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    flex-direction: column;
+
+  }
+  .iphone h3{
+    font-family: "Lilita One";
+    padding: 5px;
+  }
+  .android{
+    font-family: "Lilita One";
+    color: #2F855A;
+
+  }
   .contenedor{
     width: 100%;
     display: flex;

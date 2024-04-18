@@ -37,6 +37,7 @@ body {
     color: #2F855A;
 
   }
+  
   .contenedor{
     width: 100%;
     display: flex;
@@ -417,6 +418,19 @@ h2.ctofalta{
   .panel>p{
     font-size: 20px;
   }
+  .canciones h4{
+    font-family: 'Lilita One', cursive;
+    text-align: center;
+    font-size: 1.3em;
+    color: white;
+    padding: 18px;
+    text-shadow: 2px 2px black;
+    /* background-color: white; */
+  }
+  
+
+  
+  
 }
 
 
@@ -874,9 +888,7 @@ label{
     margin-top: -32px;
     color: white;
 }
-.confirmar{
-  /* background-color: white; */
-}
+
 
 
 .dresscode{
@@ -1050,6 +1062,8 @@ section>.asistir{
     .contformcent{
       max-width: 767px;
     }
+
+    
   }
 
   @media (max-width: 414px)
@@ -1069,6 +1083,7 @@ section>.asistir{
     .fotomodal{
       width: 90%;
     }
+
   }
 
 
@@ -1333,6 +1348,14 @@ div img{
 
 
 }
+.canciones h4{
+  font-family: 'Lilita One', cursive;
+  text-align: center;
+  font-size: 1.3em;
+  color: white;
+  padding: 15px;
+  /* background-color: white; */
+}
 button.accordion{
   font-family: 'Lilita One';
 }
@@ -1502,7 +1525,7 @@ button.accordion{
     position: absolute;
     width: 255px;
     height: auto;
-    top: 427px;
+    top: 956px; 
     left: -65px;
   }
   
@@ -1561,7 +1584,9 @@ button.accordion{
   left: -65px;
 }
 
-
+.canciones h4{
+  font-size: 3em;
+}
  
  
 }

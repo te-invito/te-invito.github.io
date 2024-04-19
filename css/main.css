@@ -733,7 +733,7 @@ body {
 }
 
 .pregaleria{
-  background-image: url(/te-invito.github.io/img/fondo.webp);
+  background-image: url(../img/fondo.webp);
 }
 
 .titulo2 h2{
@@ -791,7 +791,7 @@ a {
   /* background-image: url(/img/plata.jpg); */
 }
 .modal-1 > iframe{
-  background-image: url(/img/map.png);
+  background-image: url(../img/map.png);
   width: 290px;
 
 }
@@ -850,7 +850,7 @@ a {
   align-items: center;
   flex-direction: column;
   flex-wrap: nowrap;
-  background-image: url(/te-invito.github.io/img/img_texturaFondo.jpg);
+  background-image: url(../img/img_texturaFondo.jpg);
   
 }
 
@@ -885,7 +885,7 @@ margin: 28px;
   align-items: center;
   flex-direction: column;
   padding-top: 30px;
- background-image: url(/te-invito.github.io/img/fondo.webp);
+ background-image: url(../img/fondo.webp);
  background-size: cover;
  background-repeat: no-repeat;
  }
@@ -1158,7 +1158,7 @@ button .btn-primary{
     align-items: center;
     /* background-image: url(/img/portada.jpg); */
    /* background-image:url(/img/portadaCopia.jpg); */
-   background-image:url(/te-invito.github.io/img/portada.jpeg);
+   background-image:url(../img/portada.jpeg);
     /* background-position: center center; */
     background-repeat: no-repeat;
     background-position: 50% 50%; /*Era 50% 70%;*/
@@ -1171,7 +1171,7 @@ button .btn-primary{
 /* Boton audio*/
 
 #contenedor-play{
-  background-image: url(/te-invito.github.io/img/contenedor.png);
+  background-image: url(../img/contenedor.png);
   position: fixed;
   margin: 0% 0% 0% 0%;
   top: 740px;
@@ -1191,7 +1191,7 @@ text-indent: -999999px;
 height:40px;
 width: 40px;
 padding: 12px 18px; 
-background-image: url(/te-invito.github.io/img/play.svg);
+background-image: url(../img/play.svg);
   
 background-repeat:no-repeat; 
 background-position:center;
@@ -1342,7 +1342,7 @@ text-align: center;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-image: url(/te-invito.github.io/img/portadaCopia.jpg);
+    background-image: url(../img/portadaCopia.jpg);
 
     background-repeat: no-repeat;
     background-position: 50% 32%; 

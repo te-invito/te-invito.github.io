@@ -183,7 +183,7 @@ section .frase {
   flex-direction: column;
 }
 .pregaleria{
-  background-image: url(/te-invito.github.io/img/fondo.webp);
+  background-image: url(../img/fondo.webp);
 }
 
 .marco{

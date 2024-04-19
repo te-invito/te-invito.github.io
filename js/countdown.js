@@ -1,15 +1,15 @@
    simplyCountdown('#cuenta', {
             year: 2024, // required
-            month: 06, // required
-            day: 8, // required
+            month: 5, // required
+            day: 18, // required
             hours: 21, // Default is 0 [0-23] integer
             minutes: 0, // Default is 0 [0-59] integer
             seconds: 0, // Default is 0 [0-59] integer
             words: { //words displayed into the countdown
-                days: { singular: 'Dia', plural: 'Dias' },
-                hours: { singular: 'Hora', plural: 'Horas' },
-                minutes: { singular: 'Minuto', plural: 'Minutos' },
-                seconds: { singular: 'Segundo', plural: 'Segundos' }
+                days: { singular: 'dia', plural: 'dias' },
+                hours: { singular: 'hora', plural: 'horas' },
+                minutes: { singular: 'minuto', plural: 'minutos' },
+                seconds: { singular: 'segundo', plural: 'segundos' }
             },
             plural: true, //use plurals
             inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds

@@ -37,7 +37,7 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  /* background: var(--color-2); */
+  background: var(--color-2);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -89,13 +89,13 @@
   -moz-transition: all 0.5s 0s ease;
   -o-transition: all 0.5s 0s ease;
   transition: all 0.5s 0s ease;
-}
+} */
 
 .boton:hover {
-  background: var(--color-1);
-  color: var(--color-5);
+  /* background: var(--color-1); */
+  color: var(--color-3);
   text-decoration: none;
-} */
+}
 
 .title {
   font-family: var(--fuente-1);
@@ -149,14 +149,6 @@ span#error-form {
 
 .modal-body {
   flex: inherit;
-  padding: 0;
-}
-@media (max-width: 375px){
-.modal-body > iframe {
-  width: 300px;
-  height: 580px;
-
-}
 }
 
 .modal-transparent .modal-content {
@@ -454,6 +446,7 @@ section.cuenta-regresiva {
   position: relative;
   height: 360px;
   background-color: var(--color-5);
+  margin-top: 200px;
 }
 
 section.cuenta-regresiva .box-aros {
@@ -541,16 +534,16 @@ section.cuenta-regresiva p.fin-cuenta {
 /* Ceremonia - Fiesta */
 
 section.ceremonia-fiesta {
-  /* background: url(../img/lineas01.svg) center 0 no-repeat var(--color-5); */
-  /* padding-bottom: 20%; */
+  background: url(../img/lineas01.svg) center 0 no-repeat var(--color-5);
+  padding-bottom: 20%;
   position: relative;
 }
 
 section.ceremonia-fiesta .adorno {
   position: absolute;
-  width: 200px;
+  width: 225px;
   height: auto;
-  top: 1048px; 
+  top: 280px;
   left: -65px;
 }
 
@@ -667,7 +660,7 @@ section.ceremonia-fiesta .info-col .info-box a.boton {
 }
 
 section.ceremonia-fiesta:after {
-  /* background-image: url('../img/curvas02.svg'); */
+  background-image: url('../img/curvas02.svg');
   position: absolute;
   content: '';
   background-size: contain !important;
@@ -699,12 +692,12 @@ section.ceremonia-fiesta .addeventatc:hover .nameBtn {
 
 
 /* Galeria */
-/* 
+
 section.galeria {
   padding-top: 30px;
   padding-bottom: 10px;
   position: relative;
-  background-color: var(--color-5);
+  /* background-color: var(--color-5); */
 }
 
 section.galeria .anim-galeria {
@@ -772,7 +765,7 @@ section.galeria .slick-dots li button:before {
 
 section.galeria .slick-dots li.slick-active button:before {
   opacity: 1;
-} */
+}
 
 /* ---------- */
 
@@ -875,7 +868,7 @@ section.fiesta .item-fiesta .adorno-1 {
 
 
 section.regalos {
-  background-color: var(--color-5);
+  /* background-color: var(--color-5); */
   padding-top: 14%;
   position: relative;
   padding-bottom: 10%

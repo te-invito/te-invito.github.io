@@ -199,8 +199,8 @@ section>.asistir{
 {
   .adorno-1 {
   position: absolute;
-  top: 2530px;
-  left: -23px;
+  top: 2462px;
+  left: -32px;
   z-index: 0;
   width: 150px;
   }
@@ -1174,7 +1174,7 @@ button .btn-primary{
   background-image: url(../img/contenedor.png);
   position: fixed;
   margin: 0% 0% 0% 0%;
-  top: 740px;
+  top: 680px;
   background-color: #3333337A;
   border-radius: 100px 100px 100px 100px;
   padding: 2px;

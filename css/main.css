@@ -1494,7 +1494,7 @@ text-align: center;
   .conflores{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .conflores .adorno-1 {
     /* position: absolute; */

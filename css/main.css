@@ -197,14 +197,43 @@ section>.asistir{
 
 @media only screen and  (max-width: 767px)
 {
-  .adorno-1 {
+  /* .adorno-1 {
   position: absolute;
   top: 2462px;
   left: -32px;
   z-index: 0;
   width: 150px;
+  } */
+  .conflores{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
+  .conflores .adorno-1 {
+    /* position: absolute; */
+    top: 2462px;
+    left: -32px;
+    z-index: 0;
+    width: 150px;
+    }
+
+  
+/* Boton audio*/
+
+#contenedor-play{
+  background-image: url(../img/contenedor.png);
+  position: fixed;
+  margin: 0% 0% 0% 0%;
+  top: 650px;
+  background-color: #3333337A;
+  border-radius: 100px 100px 100px 100px;
+  padding: 2px;
+  height: 45px;
+  width: 52px;
+   z-index:1000 ;
 }
+}
+
 
 
 
@@ -1112,6 +1141,19 @@ button .btn-primary{
   font-weight: 250px;
   font-size: 2.5vh; /*Era 2vh*/
 }
+.conflores{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+.conflores .adorno-1 {
+  /* position: absolute; */
+  top: 2462px;
+  left: -32px;
+  z-index: 0;
+  width: 150px;
+  }
+
 
 
 
@@ -1125,23 +1167,19 @@ button .btn-primary{
     font-size: 1.3em;
   
   }
-  /* .inicio { 
-    width: 100%;
-
-    height: 100vh;
-  
+  .conflores{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-   background-image: url(/img/portadaCopia.jpg);
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+  .conflores .adorno-1 {
+    /* position: absolute; */
+    top: 2462px;
+    left: -32px;
+    z-index: 0;
+    width: 150px;
+    }
 
-    background-repeat: no-repeat;
-    background-position: 50% 32%; 
-   
-    background-size: cover;
-
-} */
 }
 
 @media (max-width: 500px)
@@ -1174,7 +1212,7 @@ button .btn-primary{
   background-image: url(../img/contenedor.png);
   position: fixed;
   margin: 0% 0% 0% 0%;
-  top: 680px;
+  top: 600px;
   background-color: #3333337A;
   border-radius: 100px 100px 100px 100px;
   padding: 2px;
@@ -1375,13 +1413,22 @@ text-align: center;
   }
 
 
-.adorno-1 {
-  position: absolute;
-  top: 2038px;
-  left: -23px;
-  z-index: 0;
-  width: 250px;
-  }
+
+  
+/* Boton audio*/
+
+#contenedor-play{
+  background-image: url(../img/contenedor.png);
+  position: fixed;
+  margin: 0% 0% 0% 0%;
+  top: 650px;
+  background-color: #3333337A;
+  border-radius: 100px 100px 100px 100px;
+  padding: 2px;
+  height: 45px;
+  width: 52px;
+   z-index:1000 ;
+}
   
   /* section.invitacion{
     display: flex;
@@ -1444,6 +1491,19 @@ text-align: center;
       height: auto;
   }
   
+  .conflores{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .conflores .adorno-1 {
+    /* position: absolute; */
+    top: 2462px;
+    left: -32px;
+    z-index: 0;
+    width: 150px;
+    }
+
   
 }
 
